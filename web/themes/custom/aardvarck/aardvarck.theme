@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming.
+ */
+
+function aardvarck_preprocess_html(array &$variables) {
+  $variables['#attached']['html_head'][] = [
+    [
+      '#tag' => 'link',
+      '#attributes' => ['rel' => 'preconnect', 'href' => 'https://fonts.googleapis.com'],
+    ],
+    'google_fonts_preconnect_1',
+  ];
+  $variables['#attached']['html_head'][] = [
+    [
+      '#tag' => 'link',
+      '#attributes' => ['rel' => 'preconnect', 'href' => 'https://fonts.gstatic.com', 'crossorigin' => 'anonymous'],
+    ],
+    'google_fonts_preconnect_2',
+  ];
+}

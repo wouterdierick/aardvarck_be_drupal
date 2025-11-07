@@ -1,0 +1,75 @@
+// Abstracts: Variables
+// --------------------------------------------------
+
+@use "abstracts/colors" as colors;
+@use "abstracts/mixins" as mixins;
+
+// Colors.
+
+:root {
+  --colorPrimary: var(--colorPrimary500);
+  --colorSecondary: var(--colorSecondary500);
+
+  --colorPageBackground: var(--colorWhite);
+  --colorText: var(--colorBlack);
+  --colorLink: var(--colorBlue500);
+  --colorLinkHover: var(--colorBlue600);
+
+  // A11y
+  --focusColor: var(--colorBlue500);
+}
+
+// Layout
+
+:root {
+  --containerWidth: #{mixins.ptr(1200)};
+  --gutterSmall: #{mixins.ptr(8)};
+  --gutterMedium: #{mixins.ptr(16)};
+  --gutterLarge: #{mixins.ptr(32)};
+  --borderRadiusLayout: #{mixins.ptr(32)};
+}
+
+// Fonts
+
+:root {
+  --fontFamilyBody: 'Rubik', sans-serif;
+  --fontWeightBody: var(--fontWeightRegular);
+  --fontFamilyHeading: "Momo Trust Display", sans-serif;
+  --fontWeightHeading: var(--fontWeightSemiBold);
+}
+
+// Font weights; more info at https://www.w3.org/TR/css-fonts-3/
+:root {
+  --fontWeightThin: 100;
+  --fontWeightExtraLight: 200;
+  --fontWeightLight: 300;
+  --fontWeightRegular: 300;
+  --fontWeightSemiMedium: 400;
+  --fontWeightMedium: 500;
+  --fontWeightSemiBold: 600;
+  --fontWeightBold: 700;
+  --fontWeightExtraBold: 800;
+  --fontWeightBlack: 900;
+}
+
+// Font sizes
+
+$line-height-factor: 1.2;
+
+:root {
+  --fontSizeBody: #{mixins.ptr(18)};
+  --fontLineHeightBody: #{mixins.ptr(16 * $line-height-factor)};
+  --fontSizeH1: #{mixins.ptr(34)};
+  --fontLineHeightH1: #{mixins.ptr(34 * $line-height-factor)};
+  --fontSizeH2: #{mixins.ptr(28)};
+  --fontLineHeightH2: #{mixins.ptr(28 * $line-height-factor)};
+  --fontSizeH3: #{mixins.ptr(24)};
+  --fontLineHeightH3: #{mixins.ptr(24 * $line-height-factor)};
+  --fontSizeH4: #{mixins.ptr(20)};
+  --fontLineHeightH4: #{mixins.ptr(20 * $line-height-factor)};
+  --fontSizeH5: #{mixins.ptr(18)};
+  --fontLineHeightH5: #{mixins.ptr(18 * $line-height-factor)};
+  --fontSizeH6: #{mixins.ptr(16)};
+  --fontLineHeightH6: #{mixins.ptr(16 * $line-height-factor)};
+  --fontSizeSmall: #{mixins.ptr(14)};
+}

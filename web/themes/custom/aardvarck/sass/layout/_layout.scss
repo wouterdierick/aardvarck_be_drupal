@@ -1,0 +1,31 @@
+// Layout: Layout
+// --------------------------------------------------
+
+@use "abstracts/mixins" as mixins;
+
+.site-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--gutterMedium);
+
+  @include mixins.bp('desktop') {
+    padding: var(--gutterLarge);
+  }
+}
+
+.container {
+  max-width: var(--containerWidth);
+  margin: 0 auto;
+}
+
+.site-content {
+  position: relative;
+  margin-bottom: var(--gutterLarge);
+  padding: var(--gutterMedium);
+  background-color: var(--colorNeutral100);
+  border-radius: var(--borderRadiusLayout);
+
+  @include mixins.bp('desktop') {
+    padding: var(--gutterLarge);
+  }
+}

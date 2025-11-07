@@ -1,0 +1,26 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+name: Logo
+description: Brand logo
+group: Atoms
+props:
+  type: object
+  required:
+    - primary
+  properties:
+    variant:
+      title: Variant
+      type: string
+      enum:
+        - horizontal
+        - vertical
+      default: horizontal
+    title:
+      type: ['string', 'null']
+      title: Title
+      description: The title
+      default: null
+    url:
+      type: ['string', 'null']
+      title: URL
+      description: Optional url.
+      default: null

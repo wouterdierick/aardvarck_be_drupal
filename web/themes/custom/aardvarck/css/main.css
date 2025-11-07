@@ -1,0 +1,456 @@
+:root {
+  --colorBlack: #292825;
+  --colorWhite: #ffffff;
+  --colorBlue100: #e0eaff;
+  --colorBlue200: #b3ccff;
+  --colorBlue300: #80aaff;
+  --colorBlue400: #4d88ff;
+  --colorBlue500: #1570ef;
+  --colorBlue600: #0e5cd3;
+  --colorBlue700: #0948b5;
+  --colorBlue800: #073b99;
+  --colorBlue900: #062f7a;
+  --colorNeutral100: #f1f1f1;
+  --colorNeutral200: #e6e6e5;
+  --colorNeutral300: #d2d2d0;
+  --colorNeutral400: #bdbdbb;
+  --colorNeutral500: #9c9b97;
+  --colorNeutral600: #7a7974;
+  --colorNeutral700: #585651;
+  --colorNeutral800: #3f3d39;
+  --colorNeutral900: #292825;
+  --colorPrimary100: #4a3b00;
+  --colorPrimary200: #6e5900;
+  --colorPrimary300: #a58700;
+  --colorPrimary400: #dcb500;
+  --colorPrimary500: #f1c418;
+  --colorPrimary600: #f5d24f;
+  --colorPrimary700: #f8e084;
+  --colorPrimary800: #fbefb8;
+  --colorPrimary900: #fdfae3;
+  --colorSecondary100: #4c5c52;
+  --colorSecondary200: #657f6a;
+  --colorSecondary300: #89a590;
+  --colorSecondary400: #a8c5af;
+  --colorSecondary500: #bbd8c5;
+  --colorSecondary600: #cce2d2;
+  --colorSecondary700: #dbece0;
+  --colorSecondary800: #eaf4ed;
+  --colorSecondary900: #f8fcfa;
+}
+
+:root {
+  --colorPrimary: var(--colorPrimary500);
+  --colorSecondary: var(--colorSecondary500);
+  --colorPageBackground: var(--colorWhite);
+  --colorText: var(--colorBlack);
+  --colorLink: var(--colorBlue500);
+  --colorLinkHover: var(--colorBlue600);
+  --focusColor: var(--colorBlue500);
+}
+
+:root {
+  --containerWidth: 75rem;
+  --gutterSmall: 0.5rem;
+  --gutterMedium: 1rem;
+  --gutterLarge: 2rem;
+  --borderRadiusLayout: 2rem;
+}
+
+:root {
+  --fontFamilyBody: "Rubik", sans-serif;
+  --fontWeightBody: var(--fontWeightRegular);
+  --fontFamilyHeading: "Momo Trust Display", sans-serif;
+  --fontWeightHeading: var(--fontWeightSemiBold);
+}
+
+:root {
+  --fontWeightThin: 100;
+  --fontWeightExtraLight: 200;
+  --fontWeightLight: 300;
+  --fontWeightRegular: 300;
+  --fontWeightSemiMedium: 400;
+  --fontWeightMedium: 500;
+  --fontWeightSemiBold: 600;
+  --fontWeightBold: 700;
+  --fontWeightExtraBold: 800;
+  --fontWeightBlack: 900;
+}
+
+:root {
+  --fontSizeBody: 1.125rem;
+  --fontLineHeightBody: 1.2rem;
+  --fontSizeH1: 2.125rem;
+  --fontLineHeightH1: 2.55rem;
+  --fontSizeH2: 1.75rem;
+  --fontLineHeightH2: 2.1rem;
+  --fontSizeH3: 1.5rem;
+  --fontLineHeightH3: 1.8rem;
+  --fontSizeH4: 1.25rem;
+  --fontLineHeightH4: 1.5rem;
+  --fontSizeH5: 1.125rem;
+  --fontLineHeightH5: 1.35rem;
+  --fontSizeH6: 1rem;
+  --fontLineHeightH6: 1.2rem;
+  --fontSizeSmall: 0.875rem;
+}
+
+h1,
+.h1 {
+  margin-block: 0.8em;
+  font-family: var(--fontFamilyHeading);
+  font-weight: var(--fontWeightHeading);
+  font-size: var(--fontSizeH1);
+  line-height: var(--fontLineHeightH1);
+  text-wrap: balance;
+  color: var(--colorText);
+}
+h1 a,
+.h1 a {
+  color: inherit;
+  text-decoration: inherit;
+  font-weight: inherit;
+}
+
+h2,
+.h2 {
+  margin-block: 0.8em;
+  font-family: var(--fontFamilyHeading);
+  font-weight: var(--fontWeightHeading);
+  font-size: var(--fontSizeH2);
+  line-height: var(--fontLineHeightH2);
+  text-wrap: balance;
+  color: var(--colorText);
+}
+h2 a,
+.h2 a {
+  color: inherit;
+  text-decoration: inherit;
+  font-weight: inherit;
+}
+
+h3,
+.h3 {
+  margin-block: 0.8em;
+  font-family: var(--fontFamilyHeading);
+  font-weight: var(--fontWeightHeading);
+  font-size: var(--fontSizeH3);
+  line-height: var(--fontLineHeightH3);
+  text-wrap: balance;
+  color: var(--colorText);
+}
+h3 a,
+.h3 a {
+  color: inherit;
+  text-decoration: inherit;
+  font-weight: inherit;
+}
+
+h4,
+.h4 {
+  margin-block: 0.8em;
+  font-family: var(--fontFamilyHeading);
+  font-weight: var(--fontWeightHeading);
+  font-size: var(--fontSizeH4);
+  line-height: var(--fontLineHeightH4);
+  text-wrap: balance;
+  color: var(--colorText);
+}
+h4 a,
+.h4 a {
+  color: inherit;
+  text-decoration: inherit;
+  font-weight: inherit;
+}
+
+h5,
+.h5 {
+  margin-block: 0.8em;
+  font-family: var(--fontFamilyHeading);
+  font-weight: var(--fontWeightHeading);
+  font-size: var(--fontSizeH5);
+  line-height: var(--fontLineHeightH5);
+  text-wrap: balance;
+  color: var(--colorText);
+}
+h5 a,
+.h5 a {
+  color: inherit;
+  text-decoration: inherit;
+  font-weight: inherit;
+}
+
+h6,
+.h6 {
+  margin-block: 0.8em;
+  font-family: var(--fontFamilyHeading);
+  font-weight: var(--fontWeightHeading);
+  font-size: var(--fontSizeH6);
+  line-height: var(--fontLineHeightH6);
+  text-wrap: balance;
+  color: var(--colorText);
+}
+h6 a,
+.h6 a {
+  color: inherit;
+  text-decoration: inherit;
+  font-weight: inherit;
+}
+
+p {
+  margin-block: 1em;
+  font-size: var(--fontSizeBody);
+  line-height: var(--fontLineHeightBody);
+}
+
+a {
+  color: var(--colorLink);
+  font-weight: var(--fontWeightRegular);
+  text-decoration: none;
+  outline-offset: 4px;
+  -moz-outline-radius: 4px;
+}
+a:hover {
+  color: var(--colorLinkHover);
+}
+a:focus-visible {
+  outline: solid 2px var(--colorFocus);
+  border-radius: 0.25rem;
+}
+
+.typography a {
+  color: var(--colorLink);
+  font-weight: var(--fontWeightRegular);
+  text-decoration: underline;
+  text-decoration-color: var(--colorLinkUnderline);
+  text-underline-offset: 0.3125rem;
+}
+.typography a:hover {
+  color: var(--colorLinkHover);
+  text-decoration-color: var(--colorLinkHover);
+}
+
+label {
+  color: var(--colorTextHeading);
+  font-size: var(--fontSizeBody);
+  font-weight: var(--fontWeightSemiMedium);
+}
+
+dl {
+  display: grid;
+  grid-gap: var(--gutterMedium);
+  grid-template-columns: max-content;
+}
+
+dt {
+  font-weight: bold;
+  min-inline-size: 6.25rem;
+}
+
+dd {
+  margin: 0;
+  grid-column-start: 2;
+}
+
+dd > * {
+  margin: 0;
+}
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+.notifications-badge {
+  position: relative;
+  padding-inline-end: 0.625rem;
+}
+.notifications-badge::after {
+  content: "";
+  position: absolute;
+  inset-block-start: -0.125rem;
+  inset-inline-end: 0;
+  block-size: 0.5rem;
+  inline-size: 0.5rem;
+  background-color: var(--colorPrimary);
+  border-radius: 100%;
+}
+
+iframe {
+  border: 0 none !important;
+}
+
+@media (max-width: 899.9px) {
+  .responsive-table-wrapper {
+    overflow-x: auto;
+    max-inline-size: 100vw;
+    margin-inline: -1rem;
+    padding-inline: 1rem;
+  }
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  font-weight: 600;
+  background-color: var(--colorGrey50);
+}
+
+th,
+td {
+  padding-block: 0.75rem;
+  padding-inline: 1rem;
+  text-align: start;
+  vertical-align: top;
+  border-block-end: var(--defaultBorder);
+}
+
+table caption {
+  margin-block-end: 1rem;
+  font-size: 0.875rem;
+  color: var(--colorTextMuted);
+  text-align: start;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--colorPageBackground);
+  color: var(--colorText);
+  font-family: var(--fontFamilyBody);
+  font-size: 16px;
+  font-weight: var(--fontWeightRegular);
+  padding: 0;
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  white-space: nowrap;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  border: 0;
+}
+
+/* Basis: toon duidelijke outline voor keyboard focus */
+a:focus-visible,
+button:focus-visible,
+[role=button]:focus-visible,
+[tabindex]:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--focusColor);
+  outline-offset: 3px;
+  border-radius: 4px; /* optioneel, mooie ronding op links met bg */
+}
+
+/* Fallback voor browsers zonder :focus-visible */
+@supports not selector(:focus-visible) {
+  a:focus,
+  button:focus,
+  [role=button]:focus,
+  [tabindex]:focus,
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline: 3px solid var(--focusColor);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+/* Verberg focus wanneer niet via toetsenbord (alleen als je ook :focus-visible gebruikt) */
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible),
+[role=button]:focus:not(:focus-visible),
+[tabindex]:focus:not(:focus-visible),
+input:focus:not(:focus-visible),
+select:focus:not(:focus-visible),
+textarea:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Hoog contrast/Windows forced-colors support */
+@media (forced-colors: active) {
+  :focus,
+  :focus-visible {
+    outline: 2px solid CanvasText;
+    outline-offset: 3px;
+  }
+}
+/* Optioneel: skiplink die zichtbaar wordt bij focus */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+  clip: auto;
+  overflow: visible;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+  background: #333;
+  color: #fff;
+}
+
+.site-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--gutterMedium);
+}
+@media (min-width: 900px) {
+  .site-wrapper {
+    padding: var(--gutterLarge);
+  }
+}
+
+.container {
+  max-width: var(--containerWidth);
+  margin: 0 auto;
+}
+
+.site-content {
+  position: relative;
+  margin-bottom: var(--gutterLarge);
+  padding: var(--gutterMedium);
+  background-color: var(--colorNeutral100);
+  border-radius: var(--borderRadiusLayout);
+}
+@media (min-width: 900px) {
+  .site-content {
+    padding: var(--gutterLarge);
+  }
+}
+
+@media (min-width: 431px) {
+  .site-footer {
+    padding-left: var(--gutterLarge);
+  }
+}
+.site-footer .c-logo {
+  margin: var(--gutterMedium) 0;
+}
+
+.projects-grid {
+  display: grid;
+  margin: 5rem 0;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../sass/abstracts/_colors.scss%22,%22../sass/abstracts/_variables.scss%22,%22../sass/base/_typography.scss%22,%22../sass/abstracts/_mixins.scss%22,%22../sass/base/_document.scss%22,%22../sass/base/_a11y.scss%22,%22../sass/layout/_layout.scss%22,%22../sass/layout/_footer.scss%22,%22../sass/pages/_projects.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAGA;EACE;EACA;EAGA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EAGA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EAGA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EAGA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;ACzCF;EACE;EACA;EAEA;EACA;EACA;EACA;EAGA;;;AAKF;EACE;EACA;EACA;EACA;EACA;;;AAKF;EACE;EACA;EACA;EACA;;;AAIF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAOF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;ACpEF;AAAA;ECkFE;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;AAAA;EACE;EACA;EACA;;;ADxFJ;AAAA;EC6EE;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;AAAA;EACE;EACA;EACA;;;ADnFJ;AAAA;ECwEE;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;AAAA;EACE;EACA;EACA;;;AD9EJ;AAAA;ECmEE;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;AAAA;EACE;EACA;EACA;;;ADzEJ;AAAA;EC8DE;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;AAAA;EACE;EACA;EACA;;;ADpEJ;AAAA;ECyDE;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;AAAA;EACE;EACA;EACA;;;AD/DJ;EACE;EACA;EACA;;;AAGF;EACE;EACA;EACA;EACA;EACA;;AAEA;EACE;;AAGF;EACE;EACA;;;AAIJ;EACE;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;;;AAIJ;EACE;EACA;EACA;;;AAGF;EACE;EACA;EACA;;;AAGF;EACE;EACA;;;AAGF;EACE;EACA;;;AAGF;EACE;;;AAGF;EACE;EACA;;;AAKF;EACE;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAMJ;EACE;;;ACyBE;EDpBJ;IAEI;IACA;IACA;IACA;;;;AAIJ;EAEE;;;AAGF;EACE;EACA;;;AAGF;AAAA;EAEE;EACA;EACA;EACA;EACA;;;AAGF;EACE;EACA;EACA;EACA;;;AE3JF;AAAA;AAAA;EAGC;;;AAGD;EACE;EACA;EACA;EACA;EACD;EACA;EACA;;;AAGD;EACC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AC3BD;AACA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EAOE;EACA;EACA;;;AAGF;AACA;EACE;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;IAOE;IACA;IACA;;;AAIJ;AACA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EAOE;;;AAGF;AACA;EACE;AAAA;IAEE;IACA;;;AAIJ;AACA;EACE;EACA;EACA;;;AAEF;AAAA;EAEC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AC9DD;EACE;EACA;EACA;;AHuIE;EG1IJ;IAMI;;;;AAIJ;EACE;EACA;;;AAGF;EACE;EACA;EACA;EACA;EACA;;AHsHE;EG3HJ;IAQI;;;;AHmHA;EI1IJ;IAGI;;;AAGF;EACE;;;ACZJ;EACE;EACA;EACA;EACA%22,%22file%22:%22main.css%22%7D */

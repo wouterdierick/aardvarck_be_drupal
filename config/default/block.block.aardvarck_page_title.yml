@@ -1,13 +1,13 @@
-uuid: 24448b40-a27c-4abf-8292-0fa2c79006b6
+uuid: 391d0f63-9d32-4fb6-a2eb-86716437b9ae
 langcode: en
 status: true
 dependencies:
   theme:
-    - aardvarck_theme
+    - aardvarck
 _core:
   default_config_hash: Oh72CHUkp6cj6dbrXMK2hzCsM05w9cHVoD22rMLQUfk
-id: aardvarck_theme_page_title
-theme: aardvarck_theme
+id: aardvarck_page_title
+theme: aardvarck
 region: content
 weight: -30
 provider: null

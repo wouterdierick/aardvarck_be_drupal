@@ -1,0 +1,70 @@
+// Base: A11y
+// --------------------------------------------------
+
+/* Basis: toon duidelijke outline voor keyboard focus */
+a:focus-visible,
+button:focus-visible,
+[role="button"]:focus-visible,
+[tabindex]:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--focusColor);
+  outline-offset: 3px;
+  border-radius: 4px; /* optioneel, mooie ronding op links met bg */
+}
+
+/* Fallback voor browsers zonder :focus-visible */
+@supports not selector(:focus-visible) {
+  a:focus,
+  button:focus,
+  [role="button"]:focus,
+  [tabindex]:focus,
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline: 3px solid var(--focusColor);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+/* Verberg focus wanneer niet via toetsenbord (alleen als je ook :focus-visible gebruikt) */
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible),
+[role="button"]:focus:not(:focus-visible),
+[tabindex]:focus:not(:focus-visible),
+input:focus:not(:focus-visible),
+select:focus:not(:focus-visible),
+textarea:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Hoog contrast/Windows forced-colors support */
+@media (forced-colors: active) {
+  :focus,
+  :focus-visible {
+    outline: 2px solid CanvasText;
+    outline-offset: 3px;
+  }
+}
+
+/* Optioneel: skiplink die zichtbaar wordt bij focus */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+}
+.skip-link:focus,
+.skip-link:focus-visible {
+	clip: auto;
+	overflow: visible;
+	top: 0;
+	left: 0;
+	width: auto;
+	height: 40px;
+	line-height: 40px;
+	background: #333;
+	color: #fff;
+}
+

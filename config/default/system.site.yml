@@ -4,11 +4,11 @@ langcode: en
 uuid: e374cf0c-8457-4f17-9006-d8495a4d79e4
 name: Aardvarck
 mail: dev@aardvarck.be
-slogan: ''
+slogan: 'Graphic design with a nose for detail'
 page:
-  403: ''
-  404: ''
-  front: /user/login
+  403: /node/2
+  404: /node/3
+  front: /node/1
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en

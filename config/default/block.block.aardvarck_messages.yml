@@ -1,15 +1,15 @@
-uuid: c5983105-bd53-4630-a5ec-fc657ee8861b
+uuid: b0874008-2e3d-40e2-b543-c390fc92c82e
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - aardvarck_theme
+    - aardvarck
 _core:
   default_config_hash: aeqlWs7HwctZeZC7ADcbxfqehJzBRfZKmuZz3DsH3_4
-id: aardvarck_theme_messages
-theme: aardvarck_theme
+id: aardvarck_messages
+theme: aardvarck
 region: highlighted
 weight: 0
 provider: null

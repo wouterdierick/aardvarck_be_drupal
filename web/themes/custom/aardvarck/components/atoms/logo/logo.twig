@@ -1,0 +1,23 @@
+{#
+  Component: Logo
+  -----------------------------------
+#}
+
+{% set base_class = 'logo' %}
+{% set classes = [
+  base_class,
+  base_class ~ '--' ~ variant,
+  url ? base_class ~ '--has-link',
+] %}
+{% set logo_url = '/' ~ componentMetadata.path ~ '/assets/logo-' ~ variant ~ '.svg' %}
+
+<div {{ attributes.addClass(classes) }}>
+  {% if url %}
+    <a href="{{ url }}" title="{{ title }}">
+      <img src="{{ logo_url }}" alt="{{ title }}">
+    </a>
+  {% else %}
+    <img src="{{ logo_url }}" alt="{{ title }}">
+  {% endif %}
+</div>
+

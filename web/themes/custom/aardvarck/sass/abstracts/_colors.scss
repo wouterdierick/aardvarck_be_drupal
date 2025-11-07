@@ -1,0 +1,51 @@
+// Abstracts: Colors
+// --------------------------------------------------
+
+:root {
+  --colorBlack: #292825;
+  --colorWhite: #ffffff;
+
+  // Blues
+  --colorBlue100: #e0eaff;
+  --colorBlue200: #b3ccff;
+  --colorBlue300: #80aaff;
+  --colorBlue400: #4d88ff;
+  --colorBlue500: #1570ef; // default
+  --colorBlue600: #0e5cd3;
+  --colorBlue700: #0948b5;
+  --colorBlue800: #073b99;
+  --colorBlue900: #062f7a;
+
+  // Neutrals
+  --colorNeutral100: #f1f1f1;
+  --colorNeutral200: #e6e6e5;
+  --colorNeutral300: #d2d2d0;
+  --colorNeutral400: #bdbdbb;
+  --colorNeutral500: #9c9b97;
+  --colorNeutral600: #7a7974;
+  --colorNeutral700: #585651;
+  --colorNeutral800: #3f3d39;
+  --colorNeutral900: #292825;
+
+  // Primary
+  --colorPrimary100: #4a3b00;
+  --colorPrimary200: #6e5900;
+  --colorPrimary300: #a58700;
+  --colorPrimary400: #dcb500;
+  --colorPrimary500: #f1c418; // default
+  --colorPrimary600: #f5d24f;
+  --colorPrimary700: #f8e084;
+  --colorPrimary800: #fbefb8;
+  --colorPrimary900: #fdfae3;
+
+  // Secondary
+  --colorSecondary100: #4c5c52;
+  --colorSecondary200: #657f6a;
+  --colorSecondary300: #89a590;
+  --colorSecondary400: #a8c5af;
+  --colorSecondary500: #bbd8c5; // default
+  --colorSecondary600: #cce2d2;
+  --colorSecondary700: #dbece0;
+  --colorSecondary800: #eaf4ed;
+  --colorSecondary900: #f8fcfa;
+}

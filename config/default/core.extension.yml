@@ -28,6 +28,7 @@ module:
   path_alias: 0
   system: 0
   text: 0
+  twig_tweak: 0
   update: 0
   user: 0
   views_ui: 0
@@ -37,5 +38,5 @@ module:
 theme:
   claro: 0
   gin: 0
-  aardvarck_theme: 0
+  aardvarck: 0
 profile: minimal
