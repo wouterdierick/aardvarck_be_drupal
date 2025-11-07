@@ -1,15 +1,13 @@
-uuid: 391d0f63-9d32-4fb6-a2eb-86716437b9ae
+uuid: 2afa2d14-16a2-4148-8e1f-31b74ff1c85a
 langcode: en
 status: true
 dependencies:
   theme:
     - aardvarck
-_core:
-  default_config_hash: Oh72CHUkp6cj6dbrXMK2hzCsM05w9cHVoD22rMLQUfk
-id: aardvarck_page_title
+id: aardvarck_pagetitle
 theme: aardvarck
 region: content
-weight: -30
+weight: -2
 provider: null
 plugin: page_title_block
 settings:

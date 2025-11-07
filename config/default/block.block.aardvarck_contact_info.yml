@@ -1,0 +1,22 @@
+uuid: ec6c4ec3-cb69-4bf8-aa80-c8d231cbeb9e
+langcode: en
+status: true
+dependencies:
+  module:
+    - config_pages
+  theme:
+    - aardvarck
+id: aardvarck_contact_info
+theme: aardvarck
+region: footer
+weight: 0
+provider: null
+plugin: config_pages_block
+settings:
+  id: config_pages_block
+  label: 'Contact info'
+  label_display: '0'
+  provider: config_pages
+  config_page_type: contact_info
+  config_page_view_mode: full
+visibility: {  }

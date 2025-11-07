@@ -6,11 +6,16 @@ dependencies:
     - filter.format.advanced
     - filter.format.basic
   module:
+    - config_pages
     - filter
 id: webmaster
 label: Webmaster
 weight: -7
 is_admin: false
 permissions:
+  - 'access config_pages clear values option'
+  - 'access config_pages overview'
+  - 'edit config_pages entity'
   - 'use text format advanced'
   - 'use text format basic'
+  - 'view config_pages entity'

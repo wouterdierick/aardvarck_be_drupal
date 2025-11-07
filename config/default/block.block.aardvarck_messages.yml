@@ -1,4 +1,4 @@
-uuid: b0874008-2e3d-40e2-b543-c390fc92c82e
+uuid: c6440ff1-97fe-4f49-b8d3-2c243879f85b
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,6 @@ dependencies:
     - system
   theme:
     - aardvarck
-_core:
-  default_config_hash: aeqlWs7HwctZeZC7ADcbxfqehJzBRfZKmuZz3DsH3_4
 id: aardvarck_messages
 theme: aardvarck
 region: highlighted
@@ -16,7 +14,7 @@ provider: null
 plugin: system_messages_block
 settings:
   id: system_messages_block
-  label: 'Status messages'
+  label: Messages
   label_display: '0'
   provider: system
 visibility: {  }

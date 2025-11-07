@@ -1,4 +1,4 @@
-uuid: b0e4bd1b-faa7-4849-b249-98862b14de97
+uuid: 0969d631-8439-483f-8ffb-99912792b21f
 langcode: en
 status: true
 dependencies:
@@ -6,15 +6,15 @@ dependencies:
     - system
   theme:
     - aardvarck
-id: content
+id: aardvarck_content
 theme: aardvarck
 region: content
-weight: 0
+weight: -1
 provider: null
 plugin: system_main_block
 settings:
   id: system_main_block
   label: 'Main page content'
-  label_display: visible
+  label_display: '0'
   provider: system
 visibility: {  }

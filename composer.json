@@ -16,11 +16,13 @@
     ],
     "require": {
         "composer/installers": "^2.3",
+        "drupal/config_pages": "^2.19",
         "drupal/core-composer-scaffold": "^11.2",
         "drupal/core-project-message": "^11.2",
         "drupal/core-recipe-unpack": "^11.2",
         "drupal/core-recommended": "^11.2",
         "drupal/gin": "^5.0",
+        "drupal/pathauto": "^1.14",
         "drupal/twig_tweak": "^3.4",
         "drush/drush": "^13.6"
     },

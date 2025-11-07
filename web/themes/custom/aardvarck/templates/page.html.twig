@@ -7,50 +7,27 @@
  * @see html.html.twig
  */
 #}
-<div class="layout-container">
+<div class="site-wrapper">
 
   <header role="banner">
-
-  {{ include('aardvarck:logo', { variant: 'vertical', title: 'Aardvarck', url: '/' }, with_context = false) }}
-
-
+    {{ include('aardvarck:logo', { variant: 'vertical', title: 'Aardvarck', url: '/' }, with_context = false) }}
     {{ page.header }}
   </header>
 
-  {{ page.primary_menu }}
-  {{ page.secondary_menu }}
-
-  {{ page.breadcrumb }}
-
   {{ page.highlighted }}
-
-  {{ page.help }}
+  {{ page.breadcrumb }}
 
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
     <div class="layout-content">
       {{ page.content }}
-    </div>{# /.layout-content #}
-
-    {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
-        {{ page.sidebar_first }}
-      </aside>
-    {% endif %}
-
-    {% if page.sidebar_second %}
-      <aside class="layout-sidebar-second" role="complementary">
-        {{ page.sidebar_second }}
-      </aside>
-    {% endif %}
+    </div>
 
   </main>
 
-  {% if page.footer %}
-    <footer role="contentinfo">
-      {{ page.footer }}
-    </footer>
-  {% endif %}
+  <footer role="contentinfo">
+    {{ page.footer }}
+  </footer>
 
-</div>{# /.layout-container #}
+</div>

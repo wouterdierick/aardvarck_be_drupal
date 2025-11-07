@@ -1,0 +1,17 @@
+uuid: cacb548e-1a78-4837-833c-527adf449d02
+langcode: en
+status: true
+dependencies: {  }
+id: contact_info
+label: 'Contact info'
+token: false
+context:
+  show_warning: true
+  group:
+    language: true
+  fallback:
+    language: en
+menu:
+  path: /admin/config/settings/contact-info
+  weight: 0
+  description: ''

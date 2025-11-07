@@ -1,0 +1,21 @@
+uuid: f170e8bf-1773-4a04-8b31-0ce8e8805ea4
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.contact_info
+    - field.storage.config_pages.field_whatsapp_enabled
+id: config_pages.contact_info.field_whatsapp_enabled
+field_name: field_whatsapp_enabled
+entity_type: config_pages
+bundle: contact_info
+label: 'Whatsapp link'
+description: 'Show a whatsapp link'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

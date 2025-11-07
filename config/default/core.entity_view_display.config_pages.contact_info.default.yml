@@ -1,0 +1,48 @@
+uuid: 0a0d5bc3-7d9b-4a94-9f5a-4cc26782053e
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.contact_info
+    - field.field.config_pages.contact_info.field_address
+    - field.field.config_pages.contact_info.field_email
+    - field.field.config_pages.contact_info.field_name
+    - field.field.config_pages.contact_info.field_telephone
+    - field.field.config_pages.contact_info.field_whatsapp_enabled
+id: config_pages.contact_info.default
+targetEntityType: config_pages
+bundle: contact_info
+mode: default
+content:
+  field_address:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_email:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_telephone:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  field_whatsapp_enabled: true

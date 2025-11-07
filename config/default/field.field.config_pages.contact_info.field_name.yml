@@ -1,0 +1,19 @@
+uuid: 9f445b4e-e989-4007-8936-806f4d3a6afb
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.contact_info
+    - field.storage.config_pages.field_name
+id: config_pages.contact_info.field_name
+field_name: field_name
+entity_type: config_pages
+bundle: contact_info
+label: Name
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

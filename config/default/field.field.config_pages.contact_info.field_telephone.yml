@@ -1,0 +1,21 @@
+uuid: 518585bc-0826-4676-9a2a-3df019a77a3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.contact_info
+    - field.storage.config_pages.field_telephone
+  module:
+    - telephone
+id: config_pages.contact_info.field_telephone
+field_name: field_telephone
+entity_type: config_pages
+bundle: contact_info
+label: Telephone
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone
