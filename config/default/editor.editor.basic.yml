@@ -1,0 +1,19 @@
+uuid: 025f5847-dafb-4c1f-b2db-814f543eb55a
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic
+  module:
+    - ckeditor5
+format: basic
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - bold
+      - italic
+      - link
+  plugins: {  }
+image_upload:
+  status: false

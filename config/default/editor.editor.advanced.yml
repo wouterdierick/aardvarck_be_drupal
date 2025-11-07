@@ -1,0 +1,48 @@
+uuid: 3d87ad0d-9f9f-4367-8a8c-985ab0d6b66d
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.advanced
+  module:
+    - ckeditor5
+format: advanced
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - heading
+      - style
+      - '|'
+      - bold
+      - italic
+      - '|'
+      - bulletedList
+      - numberedList
+      - '|'
+      - link
+      - '|'
+      - insertTable
+  plugins:
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_list:
+      properties:
+        reversed: true
+        startIndex: true
+      multiBlock: true
+    ckeditor5_style:
+      styles:
+        -
+          label: Lead
+          element: '<p class="lead">'
+        -
+          label: Description
+          element: '<p class="description">'
+image_upload:
+  status: false

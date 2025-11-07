@@ -1,0 +1,14 @@
+uuid: 092ee390-7bdc-4000-868c-89540f892c9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic
+  module:
+    - filter
+id: editor
+label: Editor
+weight: -8
+is_admin: false
+permissions:
+  - 'use text format basic'

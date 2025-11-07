@@ -1,0 +1,16 @@
+uuid: 5c8304a8-c9d4-4832-b522-a990374a5d27
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.advanced
+    - filter.format.basic
+  module:
+    - filter
+id: webmaster
+label: Webmaster
+weight: -7
+is_admin: false
+permissions:
+  - 'use text format advanced'
+  - 'use text format basic'

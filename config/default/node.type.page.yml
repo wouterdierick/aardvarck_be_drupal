@@ -1,0 +1,17 @@
+uuid: 8ca4760f-64de-468c-b16e-08235fcfb852
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Page
+type: page
+description: 'A basic page for static content such as an About or Contact page.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false
