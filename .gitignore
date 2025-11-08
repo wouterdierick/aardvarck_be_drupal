@@ -25,7 +25,7 @@ web/sites/*/local.services.yml
 web/sites/*/settings.local.php
 
 # Ignore css maps.
-web/themes/custom/*/css/*.css.map
+web/themes/custom/**/*.css.map
 
 # Ignore Python cache.
 api/__pycache__

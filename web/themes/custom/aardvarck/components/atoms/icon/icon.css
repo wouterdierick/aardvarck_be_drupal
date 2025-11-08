@@ -1,18 +1,1 @@
-.icon {
-  display: inline-block;
-  vertical-align: bottom;
-}
-.icon, .icon svg {
-  width: 22px;
-  height: 22px;
-}
-.icon--small, .icon--small svg {
-  width: 16px;
-  height: 16px;
-}
-.icon--large, .icon--large svg {
-  width: 28px;
-  height: 28px;
-}
-
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22icon.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAOA;EACE;EACA;;AAEA;EACE;EACA;;AAIA;EACE;EACA;;AAKF;EACE;EACA%22,%22file%22:%22icon.css%22%7D */
+.icon{display:inline-block;vertical-align:bottom}.icon,.icon svg{width:22px;height:22px}.icon--small,.icon--small svg{width:16px;height:16px}.icon--large,.icon--large svg{width:28px;height:28px}/*# sourceMappingURL=icon.css.map */
