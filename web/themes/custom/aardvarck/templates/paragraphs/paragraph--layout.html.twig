@@ -1,0 +1,20 @@
+{#
+/**
+ * @file
+ * Theme implementation to display a layout paragraph.
+ */
+#}
+{%
+  set classes = [
+    'section',
+    'section--paragraph-layout',
+    'section--' ~ custom_values.background_style
+  ]
+%}
+{% block paragraph %}
+  <section{{ attributes.addClass(classes) }}>
+    {% block content %}
+      {{ content }}
+    {% endblock %}
+  </section>
+{% endblock paragraph %}

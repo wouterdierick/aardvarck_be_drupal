@@ -5,6 +5,11 @@
  * Functions to support theming.
  */
 
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_preprocess_html().
+ */
 function aardvarck_preprocess_html(array &$variables) {
   $variables['#attached']['html_head'][] = [
     [
@@ -20,4 +25,39 @@ function aardvarck_preprocess_html(array &$variables) {
     ],
     'google_fonts_preconnect_2',
   ];
+}
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function aardvarck_preprocess_page(array &$variables) {
+  $route_match = \Drupal::routeMatch();
+
+  // Default values.
+  $variables['is_node'] = FALSE;
+  $variables['is_taxonomy_page'] = FALSE;
+
+  // Check for node pages.
+  if ($node = $route_match->getParameter('node')) {
+    $variables['is_node'] = $node instanceof \Drupal\node\NodeInterface;
+  }
+
+  // Check for taxonomy term pages.
+  if ($term = $route_match->getParameter('taxonomy_term')) {
+    $variables['is_taxonomy_page'] = $term instanceof \Drupal\taxonomy\TermInterface;
+  }
+}
+
+/**
+ * Implements hook_preprocess_paragraph().
+ */
+function aardvarck_preprocess_paragraph(array &$variables) {
+  /** @var \Drupal\paragraphs\Entity\Paragraph $paragraph */
+  $paragraph = $variables['paragraph'];
+
+  // Add custom settings to paragraph template.
+  if ($paragraph->bundle() === 'layout') {
+    $background = $paragraph->get('field_background_style')->value ?? 'transparent';
+    $variables['custom_values']['background_style'] = $background;
+  }
 }

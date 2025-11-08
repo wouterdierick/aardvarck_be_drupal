@@ -18,14 +18,39 @@
   margin: 0 auto;
 }
 
-.site-content {
-  position: relative;
-  margin-bottom: var(--gutterLarge);
-  padding: var(--gutterMedium);
-  background-color: var(--colorNeutral100);
-  border-radius: var(--borderRadiusLayout);
+// Layouts.
+
+.layout {
+  display: grid;
+  gap: var(--gutterMedium);
+  max-width: var(--containerWidth);
+  margin: 0 auto;
 
   @include mixins.bp('desktop') {
-    padding: var(--gutterLarge);
+    gap: var(--gutterLarge);
+  }
+}
+
+.layout--cols-1 {
+  @include mixins.bp('tablet') {
+    grid-template-columns: 1fr;
+  }
+}
+
+.layout--cols-2 {
+  @include mixins.bp('tablet') {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.layout--cols-3 {
+  @include mixins.bp('tablet') {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.layout--cols-4 {
+  @include mixins.bp('tablet') {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }

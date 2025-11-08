@@ -3,10 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.layout.field_background_style
     - paragraphs.paragraphs_type.layout
 id: paragraph.layout.default
 targetEntityType: paragraph
 bundle: layout
 mode: default
 content: {  }
-hidden: {  }
+hidden:
+  field_background_style: true

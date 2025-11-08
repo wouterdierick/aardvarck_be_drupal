@@ -26,11 +26,21 @@
 
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-    <div class="site-content">
-      <div class="container">
-        {{ page.content }}
-      </div>
-    </div>
+
+    {# Main content #}
+    {% if is_node or is_taxonomy_page %}
+      {{ page.content }}
+    {% else %}
+      <section class="section section--site-content section--grey">
+        <div class="layout layout--cols-1">
+          <div class="layout__region layout__region--col-1">
+            <h1>{{ page['#title'] }}</h1>
+            {{ page.content }}
+          </div>
+        </div>
+      </section>
+    {% endif %}
+
   </main>
 
   {% embed 'aardvarck:site-footer' with {

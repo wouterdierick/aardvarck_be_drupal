@@ -1,0 +1,32 @@
+// Layout: Layout
+// --------------------------------------------------
+
+@use "abstracts/mixins" as mixins;
+
+.section {
+  position: relative;
+  margin-block-end: var(--gutterLarge);
+  padding: var(--gutterMedium);
+  border-radius: var(--borderRadiusLayout);
+
+  @include mixins.bp('desktop') {
+    padding: var(--gutterLarge);
+  }
+}
+
+.section--transparent {
+  padding-block: 0;
+  background-color: transparent;
+}
+
+.section--grey {
+  background-color: var(--colorNeutral100);
+}
+
+.section--primary {
+  background-color: var(--colorPrimary);
+}
+
+.section--secondary {
+  background-color: var(--colorSecondary);
+}

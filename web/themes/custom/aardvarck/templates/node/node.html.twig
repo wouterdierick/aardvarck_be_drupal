@@ -1,0 +1,24 @@
+{#
+/**
+ * @file
+ * Theme implementation to display a node.
+ */
+#}
+<article{{ attributes }}>
+
+  <section class="section section--site-content section--grey">
+    <div class="layout layout--cols-1">
+      <div class="layout__region layout__region--col-1">
+        {{ title_prefix }}
+        <h1{{ title_attributes }}>{{ label }}</h1>
+        {{ title_suffix }}
+        <div{{ content_attributes }}>
+          {{ content|without('field_paragraphs') }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{ content.field_paragraphs }}
+
+</article>

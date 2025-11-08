@@ -27,3 +27,19 @@ libraries-override:
         css/components/js.module.css: false
         css/components/position-container.module.css: false
         css/components/reset-appearance.module.css: false
+  custom_layouts/cols-1:
+    css:
+      theme:
+        layouts/cols-1/cols-1.css: false
+  custom_layouts/cols-2:
+    css:
+      theme:
+        layouts/cols-2/cols-2.css: false
+  custom_layouts/cols-3:
+    css:
+      theme:
+        layouts/cols-3/cols-3.css: false
+  custom_layouts/cols-4:
+    css:
+      theme:
+        layouts/cols-4/cols-4.css: false

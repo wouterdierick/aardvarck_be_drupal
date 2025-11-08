@@ -3,14 +3,21 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.layout.field_background_style
     - paragraphs.paragraphs_type.layout
 id: paragraph.layout.default
 targetEntityType: paragraph
 bundle: layout
 mode: default
 content:
-  layout_paragraphs_fields:
+  field_background_style:
+    type: options_select
     weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  layout_paragraphs_fields:
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }

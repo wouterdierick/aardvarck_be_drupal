@@ -4,16 +4,12 @@
  */
 
 .layout--cols-3 {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.layout--cols-3>.layout__region {
-  flex: 0 1 100%;
+  display: grid;
+  gap: 1rem;
 }
 
 @media screen and (min-width: 40em) {
-  .layout--cols-3>.layout__region {
-    flex: 0 1 33.33%;
+  .layout--cols-3 {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
