@@ -1,6 +1,7 @@
 _core:
   default_config_hash: 4GIX5Esnc_umpXUBj4IIocRX7Mt5fPhm4AgXfE3E56E
 module:
+  autofill: 0
   block: 0
   ckeditor5: 0
   config_pages: 0
@@ -30,6 +31,7 @@ module:
   metatag: 0
   mysql: 0
   node: 0
+  node_revision_delete: 0
   options: 0
   page_cache: 0
   path: 0
@@ -48,6 +50,7 @@ module:
   content_translation: 10
   views: 10
   paragraphs: 11
+  publication_date: 99
   minimal: 1000
 theme:
   claro: 0

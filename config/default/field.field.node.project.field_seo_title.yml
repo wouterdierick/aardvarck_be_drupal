@@ -1,0 +1,19 @@
+uuid: ad46f039-6b4d-45c4-97c0-4b46852eac5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_seo_title
+    - node.type.project
+id: node.project.field_seo_title
+field_name: field_seo_title
+entity_type: node
+bundle: project
+label: 'SEO Title'
+description: 'The title shown in search engine results and when sharing links on social media. Keep it concise and relevant (around 50–60 characters).'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

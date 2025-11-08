@@ -1,14 +1,14 @@
-uuid: 24366aa0-7a75-4ff8-a9f8-f01425512fd0
+uuid: 99fc0fa2-524a-4b0b-bef4-86baa7bdb826
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.page.field_body
-    - field.field.node.page.field_paragraphs
-    - field.field.node.page.field_seo_description
-    - field.field.node.page.field_seo_image
-    - field.field.node.page.field_seo_title
-    - node.type.page
+    - field.field.node.project.field_body
+    - field.field.node.project.field_paragraphs
+    - field.field.node.project.field_seo_description
+    - field.field.node.project.field_seo_image
+    - field.field.node.project.field_seo_title
+    - node.type.project
   module:
     - field_group
     - layout_paragraphs
@@ -105,9 +105,9 @@ third_party_settings:
         description: ''
         required_fields: true
         weight: 0
-id: node.page.default
+id: node.project.default
 targetEntityType: node
-bundle: page
+bundle: project
 mode: default
 content:
   created:
@@ -212,5 +212,17 @@ content:
       placeholder: ''
     third_party_settings: {  }
 hidden:
+  changed: true
+  content_translation_outdated: true
+  content_translation_source: true
+  default_langcode: true
+  nid: true
   promote: true
+  revision_default: true
+  revision_timestamp: true
+  revision_translation_affected: true
+  revision_uid: true
   sticky: true
+  type: true
+  uuid: true
+  vid: true

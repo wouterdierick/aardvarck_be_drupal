@@ -16,6 +16,7 @@
     ],
     "require": {
         "composer/installers": "^2.3",
+        "drupal/autofill": "^1.2",
         "drupal/config_pages": "^2.19",
         "drupal/core-composer-scaffold": "^11.2",
         "drupal/core-project-message": "^11.2",
@@ -26,8 +27,10 @@
         "drupal/gin_login": "^2.1",
         "drupal/layout_paragraphs": "^2.1",
         "drupal/metatag": "^2.2",
+        "drupal/node_revision_delete": "^2.0",
         "drupal/paragraphs": "^1.19",
         "drupal/pathauto": "^1.14",
+        "drupal/publication_date": "^3.1",
         "drupal/twig_field_value": "^2.0",
         "drupal/twig_tweak": "^3.4",
         "drupal/webform": "^6.3@beta",
@@ -110,5 +113,8 @@
                 "      composer remove drupal/core-project-message"
             ]
         }
+    },
+    "require-dev": {
+        "drupal/field_tools": "^1.0@alpha"
     }
 }
