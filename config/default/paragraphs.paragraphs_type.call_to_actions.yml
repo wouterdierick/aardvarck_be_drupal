@@ -1,0 +1,10 @@
+uuid: 28340a5f-e607-46d6-8b75-55038ce93458
+langcode: en
+status: true
+dependencies: {  }
+id: call_to_actions
+label: 'Call to actions'
+icon_uuid: null
+icon_default: null
+description: 'A section with buttons or links that guide users toward key actions.'
+behavior_plugins: {  }

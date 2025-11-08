@@ -1,0 +1,13 @@
+/*
+ * @file
+ * Provides the layout styles.
+ */
+
+.layout--cols-1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.layout--cols-1 > .layout__region {
+  flex: 0 1 100%;
+}

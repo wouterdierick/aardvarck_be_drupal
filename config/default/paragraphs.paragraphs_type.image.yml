@@ -1,0 +1,10 @@
+uuid: 6fd35055-29fd-4b18-aa12-c16ccfa9e910
+langcode: en
+status: true
+dependencies: {  }
+id: image
+label: Image
+icon_uuid: null
+icon_default: null
+description: 'Displays a single image with optional caption.'
+behavior_plugins: {  }

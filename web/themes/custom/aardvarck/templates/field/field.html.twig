@@ -1,0 +1,35 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a field.
+ */
+#}
+{%
+  set title_classes = [
+    label_display == 'visually_hidden' ? 'visually-hidden',
+  ]
+%}
+{% if not label_hidden %}
+<div{{ attributes }}>
+  <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
+  {% for item in items %}
+    <div{{ item.attributes }}>{{ item.content }}</div>
+  {% endfor %}
+</div>
+{% else %}
+  {% if multiple or (attributes is not empty) %}
+    <div{{ attributes }}>
+  {% endif %}
+    {% for item in items %}
+      {% if item.attributes is not empty %}
+      <div{{ item.attributes }}>
+      {% endif %}
+        {{ item.content }}
+      {% if item.attributes is not empty %}
+      </div>
+      {% endif %}
+    {% endfor %}
+  {% if multiple or attributes is not empty %}
+    </div>
+  {% endif %}
+{% endif %}

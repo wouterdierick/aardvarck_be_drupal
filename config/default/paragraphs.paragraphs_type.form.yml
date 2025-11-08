@@ -1,0 +1,10 @@
+uuid: eb80d87f-ad80-49e5-8191-b3992a35c787
+langcode: en
+status: true
+dependencies: {  }
+id: form
+label: Form
+icon_uuid: null
+icon_default: null
+description: 'Embeds a selected webform.'
+behavior_plugins: {  }

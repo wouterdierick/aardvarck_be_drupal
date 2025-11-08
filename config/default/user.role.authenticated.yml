@@ -2,8 +2,11 @@ uuid: f19c558d-01db-4ee0-b7d0-29f903bdb8e7
 langcode: en
 status: true
 dependencies:
+  config:
+    - filter.format.webform_default
   module:
     - config_pages
+    - filter
     - media
     - system
 _core:
@@ -14,5 +17,6 @@ weight: -9
 is_admin: false
 permissions:
   - 'access content'
+  - 'use text format webform_default'
   - 'view contact_info config page entity'
   - 'view media'

@@ -1,0 +1,20 @@
+uuid: b368221e-4576-4288-b278-00f6e4ed0a35
+langcode: en
+status: true
+dependencies:
+  theme:
+    - aardvarck
+id: aardvarck_tabs
+theme: aardvarck
+region: highlighted
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

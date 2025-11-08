@@ -1,0 +1,10 @@
+uuid: edeec970-19bd-448a-9268-285ac03d2b99
+langcode: en
+status: true
+dependencies: {  }
+id: text
+label: Text
+icon_uuid: null
+icon_default: null
+description: 'A simple text block for body content or introductions.'
+behavior_plugins: {  }

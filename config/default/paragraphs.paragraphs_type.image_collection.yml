@@ -1,0 +1,10 @@
+uuid: 491ed1d5-3b5c-4f54-999e-1ab8ab886bac
+langcode: en
+status: true
+dependencies: {  }
+id: image_collection
+label: 'Image collection'
+icon_uuid: null
+icon_default: null
+description: 'A gallery of multiple images shown in a grid.'
+behavior_plugins: {  }

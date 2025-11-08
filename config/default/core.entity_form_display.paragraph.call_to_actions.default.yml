@@ -1,0 +1,25 @@
+uuid: 299effe7-fb86-449b-931f-2b27915a5182
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.call_to_actions.field_call_to_actions
+    - paragraphs.paragraphs_type.call_to_actions
+  module:
+    - link
+id: paragraph.call_to_actions.default
+targetEntityType: paragraph
+bundle: call_to_actions
+mode: default
+content:
+  field_call_to_actions:
+    type: link_default
+    weight: 0
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
