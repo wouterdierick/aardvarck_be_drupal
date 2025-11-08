@@ -1,0 +1,19 @@
+{#
+  Component: Main navigation
+  -----------------------------------
+#}
+
+{% set base_class = 'main-navigation' %}
+{% set classes = [
+  base_class,
+] %}
+
+<nav {{ attributes.addClass(classes) }}>
+  <ul>
+    {% for item in items %}
+      <li{% if item.in_active_trail %} class="active"{% endif %}>
+          <a href="{{ item.url }}">{{ item.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

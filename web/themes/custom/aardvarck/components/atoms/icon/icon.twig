@@ -1,0 +1,15 @@
+{#
+  Component: Icon
+  -----------------------------------
+#}
+
+{% set base_class = 'icon' %}
+{% set classes = [
+  base_class,
+  base_class ~ '--' ~ size,
+] %}
+{% set icon_path = active_theme_path() ~ '/assets/icons/' ~ name ~ '.svg' %}
+
+<span {{ attributes.addClass(classes) }} aria-hidden="true" focusable="false">
+  {% include icon_path ignore missing %}
+</span>

@@ -8,6 +8,7 @@ dependencies:
     - field.field.config_pages.contact_info.field_email
     - field.field.config_pages.contact_info.field_name
     - field.field.config_pages.contact_info.field_telephone
+    - field.field.config_pages.contact_info.field_vat_number
     - field.field.config_pages.contact_info.field_whatsapp_enabled
 id: config_pages.contact_info.default
 targetEntityType: config_pages
@@ -43,6 +44,14 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 3
+    region: content
+  field_vat_number:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
     region: content
 hidden:
   field_whatsapp_enabled: true

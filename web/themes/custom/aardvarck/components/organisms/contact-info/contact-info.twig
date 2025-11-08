@@ -1,0 +1,46 @@
+{#
+  Component: Contact info
+  -----------------------------------
+#}
+
+{% set base_class = 'contact-info' %}
+{% set classes = [
+  base_class,
+] %}
+{% set telephone_safe = telephone|render|preg_replace('/[^\\d+]/', '') %}
+
+<div {{ attributes.addClass(classes) }}>
+  <div class="{{ base_class ~ 'address-wrapper' }}">
+    {% if name %}
+      <p class="{{ base_class ~ '__name' }}"><strong>{{ name }}</strong></p>
+    {% endif %}
+    {% if address %}
+      <p class="{{ base_class ~ '__address' }}">{{ address }}</p>
+    {% endif %}
+    {% if vat_number %}
+      <p class="{{ base_class ~ '__vat-number' }}">{{ vat_number }}</p>
+    {% endif %}
+  </div>
+  <div class="{{ base_class ~ 'contact-wrapper' }}">
+    {% if email %}
+      <p class="{{ base_class ~ '__email' }}">
+        <a href="mailto:{{ email }}" aria-label="{{ "Send an email to"|t }} {{ email }}">
+          {{ include('aardvarck:icon', { name: 'mail' }, with_context = false) }} {{ email }}
+        </a>
+      </p>
+    {% endif %}
+    {% if telephone %}
+      <p class="{{ base_class ~ '__telephone' }}">
+        <a href="tel:{{ telephone_safe }}" aria-label="{{ "Call"|t }} {{ telephone }}">
+          {{ include('aardvarck:icon', { name: 'phone' }, with_context = false) }} {{ telephone }}
+        </a>
+      </p>
+      <p class="{{ base_class ~ '__whatsapp' }}">
+        <a href="https://wa.me/{{ telephone_safe }}?text=Hello%20there!" aria-label="{{ "Send a whatsapp message to" }} {{ telephone }}">
+          {{ include('aardvarck:icon', { name: 'chat' }, with_context = false) }} WhatsApp
+        </a>
+      </p>
+    {% endif %}
+
+  </div>
+</div>

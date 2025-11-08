@@ -4,11 +4,18 @@ status: true
 dependencies:
   config:
     - filter.format.basic
+    - node.type.page
   module:
+    - content_translation
     - filter
+    - node
 id: editor
 label: Editor
 weight: -8
 is_admin: false
 permissions:
+  - 'create page content'
+  - 'delete own page content'
+  - 'edit own page content'
+  - 'translate page node'
   - 'use text format basic'

@@ -1,0 +1,41 @@
+{#
+/**
+ * @file
+ * Theme override to display a single page.
+ *
+ * @see \Drupal\Core\Theme\ThemePreprocess::preprocessPage()
+ * @see html.html.twig
+ */
+#}
+<div class="site-wrapper">
+
+  {% embed 'aardvarck:site-header' with {
+    variant: is_front ? 'home' : default,
+    logo_url: drupal_url('<front>'),
+    main_navigation: page.header.aardvarck_mainnavigation,
+    language_switcher: page.header.aardvarck_languageswitcher,
+    content: 'Hello'
+    } only %}
+    {% block content %}
+      <h1>Hello</h1>
+    {% endblock %}
+  {% endembed %}
+
+  {{ page.highlighted }}
+  {{ page.breadcrumb }}
+
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+    <div class="site-content">
+      <div class="container">
+        {{ page.content }}
+      </div>
+    </div>
+  </main>
+
+  {% embed 'aardvarck:site-footer' with {
+    contact_info: page.footer.aardvarck_contact_info
+    } only %}
+  {% endembed %}
+
+</div>

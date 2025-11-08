@@ -1,0 +1,29 @@
+uuid: c02ec2cd-0bbb-4160-a6c3-eea25be416cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_seo_image
+    - media.type.image
+    - node.type.page
+id: node.page.field_seo_image
+field_name: field_seo_image
+entity_type: node
+bundle: page
+label: 'SEO Image'
+description: 'The image used when this page is shared on social media (e.g., Facebook, X, LinkedIn). Use a clear, high-quality image.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

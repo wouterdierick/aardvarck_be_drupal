@@ -1,0 +1,16 @@
+{#
+  Component: Site footer
+  -----------------------------------
+#}
+
+{% set base_class = 'site-footer' %}
+{% set classes = [
+  base_class,
+] %}
+
+<footer {{ attributes.addClass(classes) }} role="contentinfo">
+  <div class="{{ base_class }}__wrapper">
+    {{ include('aardvarck:logo', { variant: 'horizontal', title: 'Aardvarck' }, with_context = false) }}
+    {{ contact_info }}
+  </div>
+</footer>

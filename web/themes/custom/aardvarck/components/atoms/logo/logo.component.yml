@@ -4,8 +4,6 @@ description: Brand logo
 group: Atoms
 props:
   type: object
-  required:
-    - primary
   properties:
     variant:
       title: Variant

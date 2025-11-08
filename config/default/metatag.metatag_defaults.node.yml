@@ -1,0 +1,14 @@
+uuid: 845a41a3-bb32-44d1-a2e3-99959a6490eb
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rpwvgyEURXLz_JjgMCrkS1rUv-0k3L79BpO-ReN7fDI
+id: node
+label: Content
+tags:
+  abstract: '[node:field_seo_description]'
+  canonical_url: '[node:url]'
+  description: '[node:field_seo_description]'
+  image_src: '[node:field_seo_image]'
+  title: '[node:field_seo_title] | [site:name]'

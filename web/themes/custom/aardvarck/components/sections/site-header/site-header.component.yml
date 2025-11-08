@@ -1,0 +1,24 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+name: Site header
+group: Sections
+props:
+  type: object
+  properties:
+    variant:
+      title: Variant
+      type: string
+      enum:
+        - default
+        - home
+      default: default
+    logo_url:
+      title: Logo URL
+      type: string
+      default: '/'
+slots:
+  main_navigation:
+    title: Main navigation
+  language_switcher:
+    title: Language switcher
+  content:
+    title: Content

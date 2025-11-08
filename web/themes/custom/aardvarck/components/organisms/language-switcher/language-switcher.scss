@@ -1,0 +1,36 @@
+// Component: Language Switcher
+// --------------------------------------------------
+
+@use 'abstracts/mixins' as mixins;
+
+$base_class: "language-switcher";
+
+.#{$base_class} {
+  display: flex;
+  align-items: center;
+  gap: mixins.ptr(16);
+
+  ul {
+    display: flex;
+    gap: mixins.ptr(16);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      > a {
+        color: var(--colorMenu, --colorText);
+        &:hover {
+          color: var(--colorMenuHover, var(--colorLinkHover));
+        }
+      }
+      > a.is-active {
+        color: var(--colorMenuActive, var(--colorText));
+        font-weight: var(--fontWeightBold);
+        &:hover {
+          color: var(--colorMenuActiveHover, var(--colorLinkHover));
+        }
+      }
+    }
+  }
+}

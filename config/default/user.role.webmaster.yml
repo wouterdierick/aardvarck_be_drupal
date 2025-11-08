@@ -5,9 +5,12 @@ dependencies:
   config:
     - filter.format.advanced
     - filter.format.basic
+    - node.type.page
   module:
     - config_pages
+    - content_translation
     - filter
+    - node
 id: webmaster
 label: Webmaster
 weight: -7
@@ -15,7 +18,16 @@ is_admin: false
 permissions:
   - 'access config_pages clear values option'
   - 'access config_pages overview'
+  - 'create page content'
+  - 'delete any page content'
+  - 'delete own page content'
+  - 'delete page revisions'
+  - 'edit any page content'
   - 'edit config_pages entity'
+  - 'edit own page content'
+  - 'revert page revisions'
+  - 'translate page node'
   - 'use text format advanced'
   - 'use text format basic'
   - 'view config_pages entity'
+  - 'view page revisions'

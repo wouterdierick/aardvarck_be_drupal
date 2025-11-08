@@ -1,0 +1,26 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+name: Contact info
+group: Organisms
+props:
+  type: object
+  properties:
+    name:
+      title: Name
+      type: string
+      default: null
+    address:
+      title: Address
+      type: string
+      default: null
+    email:
+      title: Email
+      type: string
+      default: null
+    telephone:
+      title: Telephone
+      type: string
+      default: null
+    vat_number:
+      title: VAT number
+      type: string
+      default: null

@@ -1,0 +1,64 @@
+// Component: Site header
+// --------------------------------------------------
+
+@use 'abstracts/mixins' as mixins;
+
+$base_class: "site-header";
+
+.#{$base_class} {
+  --colorHeaderBackground: var(--colorSecondary);
+}
+
+.#{$base_class}{
+  position: relative;
+  min-height: mixins.ptr(64);
+  padding: var(--gutterMedium);
+  margin-block-end: var(--gutterLarge);
+  background-color: var(--colorHeaderBackground);
+  border-radius: var(--borderRadiusLayout);
+
+  @include mixins.bp('desktop') {
+    padding: var(--gutterLarge);
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gutterLarge);
+
+    .main-navigation {
+      flex: 1 1 auto;
+    }
+
+    .language-switcher {
+      // margin-inline-start: auto;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transform: translateY(50%);
+    padding: mixins.ptr(8);
+    background: var(--colorPageBackground);
+    border-radius: 100%;;
+  }
+
+  .logo {
+    display: inline-block;
+    border-radius: 100%;
+    padding: mixins.ptr(8);
+    background-color: var(--colorWhite);
+  }
+}
+
+// Home variant
+
+.#{$base_class}--home {
+  height: 80vh;
+}

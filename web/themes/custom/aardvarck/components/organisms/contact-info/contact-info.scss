@@ -1,0 +1,28 @@
+// Component: Contact info
+// --------------------------------------------------
+
+@use 'abstracts/mixins' as mixins;
+
+$base_class: "contact-info";
+
+.#{$base_class} {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--gutterMedium);
+
+  @include mixins.bp('tablet') {
+    gap: var(--gutterLarge);
+  }
+
+  p {
+    margin: mixins.ptr(8) 0;
+  }
+
+  a {
+    color: var(--colorText);
+    &:hover {
+      color: var(--colorLinkHover);
+    }
+  }
+}

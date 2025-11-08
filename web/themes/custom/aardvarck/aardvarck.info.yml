@@ -16,14 +16,14 @@ libraries:
   - aardvarck/base
 
 libraries-override:
-  core/drupal:
+  system/base:
     css:
       component:
-        /core/modules/system/css/components/align.module.css: false
-        /core/modules/system/css/components/container-inline.module.css: false
-        /core/modules/system/css/components/clearfix.module.css: false
-        /core/modules/system/css/components/hidden.module.css: false
-        /core/modules/system/css/components/item-list.module.css: false
-        /core/modules/system/css/components/js.module.css: false
-        /core/modules/system/css/components/position-container.module.css: false
-        /core/modules/system/css/components/reset-appearance.module.css: false
+        css/components/align.module.css: false
+        css/components/container-inline.module.css: false
+        css/components/clearfix.module.css: false
+        css/components/hidden.module.css: false
+        css/components/item-list.module.css: false
+        css/components/js.module.css: false
+        css/components/position-container.module.css: false
+        css/components/reset-appearance.module.css: false
