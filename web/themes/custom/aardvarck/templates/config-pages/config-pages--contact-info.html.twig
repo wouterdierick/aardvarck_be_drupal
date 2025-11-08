@@ -1,0 +1,17 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a config_page.
+ *
+ * @see template_preprocess_config_pages()
+ *
+ * @ingroup themeable
+ */
+#}
+{{ include('aardvarck:contact-info', {
+  name: content.field_name|field_value,
+  address: content.field_address|field_value,
+  email: content.field_email|field_value,
+  telephone: content.field_telephone|field_value,
+  vat_number: content.field_vat_number|field_value
+}, with_context = false) }}

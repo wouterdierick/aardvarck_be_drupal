@@ -1,0 +1,27 @@
+{#
+  Component: Site header
+  -----------------------------------
+#}
+
+{% set base_class = 'site-header' %}
+{% set classes = [
+  base_class,
+  base_class ~ '--' ~ variant,
+] %}
+
+<header {{ attributes.addClass(classes) }}>
+  <div class="{{ base_class }}__wrapper">
+    {{ include('aardvarck:logo', { variant: 'vertical', title: 'Aardvarck', url: '/' }, with_context = false) }}
+    {{ main_navigation }}
+    {{ language_switcher }}
+  </div>
+  {% if content %}
+    <div class="{{ base_class }}__content">
+      {% block content %}
+      {% endblock %}
+    </div>
+  {% endif %}
+  <div class="{{ base_class }}__arrow">
+    {{ include('aardvarck:icon', { name: 'arrow-down-circle', size: 'large' }, with_context = false) }}
+  </div>
+</header>

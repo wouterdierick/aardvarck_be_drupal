@@ -1,0 +1,19 @@
+uuid: e0cf0abc-52b9-4a6e-84ae-3f758d6479cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_seo_description
+    - node.type.page
+id: node.page.field_seo_description
+field_name: field_seo_description
+entity_type: node
+bundle: page
+label: 'SEO Description'
+description: 'A short summary that appears below the title in search results or social media previews. Aim for 150–160 characters to encourage clicks.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

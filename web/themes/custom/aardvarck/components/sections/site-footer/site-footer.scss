@@ -1,0 +1,8 @@
+// Component: Site footer
+// --------------------------------------------------
+
+@use 'abstracts/mixins' as mixins;
+
+$base_class: "site-footer";
+
+.#{$base_class} {}

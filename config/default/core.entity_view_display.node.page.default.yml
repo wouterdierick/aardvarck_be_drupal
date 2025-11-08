@@ -4,6 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.page.field_body
+    - field.field.node.page.field_seo_description
+    - field.field.node.page.field_seo_image
+    - field.field.node.page.field_seo_title
     - node.type.page
   module:
     - text
@@ -21,5 +24,8 @@ content:
     weight: 0
     region: content
 hidden:
+  field_seo_description: true
+  field_seo_image: true
+  field_seo_title: true
   langcode: true
   links: true

@@ -8,6 +8,7 @@ dependencies:
     - field.field.config_pages.contact_info.field_email
     - field.field.config_pages.contact_info.field_name
     - field.field.config_pages.contact_info.field_telephone
+    - field.field.config_pages.contact_info.field_vat_number
     - field.field.config_pages.contact_info.field_whatsapp_enabled
   module:
     - telephone
@@ -45,6 +46,14 @@ content:
     weight: 3
     region: content
     settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_vat_number:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
       placeholder: ''
     third_party_settings: {  }
   field_whatsapp_enabled:

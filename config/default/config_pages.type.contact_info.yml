@@ -12,6 +12,6 @@ context:
   fallback:
     language: en
 menu:
-  path: /admin/config/settings/contact-info
-  weight: 0
+  path: /admin/structure/config_pages/contact-info
+  weight: 40
   description: ''

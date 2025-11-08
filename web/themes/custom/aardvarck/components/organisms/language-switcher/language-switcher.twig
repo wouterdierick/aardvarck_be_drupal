@@ -1,0 +1,20 @@
+{#
+  Component: Language switcher
+  -----------------------------------
+#}
+
+{% set base_class = 'language-switcher' %}
+{% set classes = [
+  base_class,
+] %}
+
+<nav {{ attributes.addClass(classes) }}>
+  {{ include('aardvarck:icon', { name: 'globe-alt' }, with_context = false) }}
+  <ul>
+    {% for item in items %}
+      <li{% if item.in_active_trail %} class="active"{% endif %}>
+        {{ item.link }}
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

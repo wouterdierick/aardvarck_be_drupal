@@ -1,0 +1,34 @@
+// Component: Main Navigation
+// --------------------------------------------------
+
+@use 'abstracts/mixins' as mixins;
+
+$base_class: "main-navigation";
+
+.#{$base_class} {
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: var(--gutterLarge);
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      > a {
+        color: var(--colorMenu, --colorText);
+        &:hover {
+          color: var(--colorMenuHover, var(--colorLinkHover));
+        }
+      }
+      &.active > a {
+        color: var(--colorMenuActive, var(--colorText));
+        font-weight: var(--fontWeightBold);
+        &:hover {
+          color: var(--colorMenuActiveHover, var(--colorLinkHover));
+        }
+      }
+    }
+  }
+}

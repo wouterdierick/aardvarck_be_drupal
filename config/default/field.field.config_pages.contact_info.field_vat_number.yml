@@ -1,0 +1,19 @@
+uuid: 3d52d3d7-e5a6-4ff9-bf50-16d350088226
+langcode: nl
+status: true
+dependencies:
+  config:
+    - config_pages.type.contact_info
+    - field.storage.config_pages.field_vat_number
+id: config_pages.contact_info.field_vat_number
+field_name: field_vat_number
+entity_type: config_pages
+bundle: contact_info
+label: 'VAT number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
