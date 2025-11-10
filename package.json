@@ -1,15 +1,13 @@
 {
-  "name": "html",
+  "name": "aardvarck",
+  "type": "module",
   "version": "1.0.0",
   "scripts": {
-    "sass:main": "sass --style=expanded --embed-source-map --load-path=node_modules --load-path=web/themes/custom/aardvarck/sass --watch web/themes/custom/aardvarck/sass/main.scss web/themes/custom/aardvarck/css/main.css",
-    "sass:components": "sass --style=expanded --embed-source-map --load-path=node_modules --load-path=web/themes/custom/aardvarck/sass --watch web/themes/custom/aardvarck/components:web/themes/custom/aardvarck/components",
-    "dev": "npm-run-all --parallel sass:main sass:components",
-    "build:main": "sass --style=compressed --load-path=node_modules --load-path=web/themes/custom/aardvarck/sass web/themes/custom/aardvarck/sass/main.scss web/themes/custom/aardvarck/css/main.css",
-    "build:components": "sass --style=compressed --load-path=node_modules --load-path=web/themes/custom/aardvarck/sass web/themes/custom/aardvarck/components:web/themes/custom/aardvarck/components",
-    "build": "npm-run-all build:main build:components && npx postcss web/themes/custom/aardvarck/css/main.css -r"
+    "dev": "node tools/theme.js dev",
+    "build": "node tools/theme.js build"
   },
   "devDependencies": {
+    "@tlvk/yaml-to-scss": "^1.0.0",
     "autoprefixer": "^10.4.21",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.5.6",
