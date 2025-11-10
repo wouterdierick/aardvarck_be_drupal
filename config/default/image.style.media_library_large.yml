@@ -1,0 +1,21 @@
+uuid: b883ff7d-1fbf-4154-b86b-c743f9dce39b
+langcode: en
+status: true
+dependencies: {  }
+name: media_library_large
+label: 'Media Library large'
+effects:
+  df2db8ce-0732-4c2c-bf9f-48bfcac33cf0:
+    uuid: df2db8ce-0732-4c2c-bf9f-48bfcac33cf0
+    id: image_scale
+    weight: 1
+    data:
+      width: 480
+      height: 480
+      upscale: false
+  cb431106-9ab8-474b-bd2d-5e9ee6064782:
+    uuid: cb431106-9ab8-474b-bd2d-5e9ee6064782
+    id: image_convert_avif
+    weight: 2
+    data:
+      extension: webp

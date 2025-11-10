@@ -1,0 +1,10 @@
+uuid: 22b3046f-b2ee-45df-b109-8197c4784c13
+langcode: en
+status: true
+dependencies: {  }
+id: view
+label: View
+icon_uuid: null
+icon_default: null
+description: 'Embeds a selected view.'
+behavior_plugins: {  }

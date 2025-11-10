@@ -10,7 +10,7 @@ field_name: field_seo_title
 entity_type: node
 bundle: page
 label: 'SEO Title'
-description: 'The title shown in search engine results and when sharing links on social media. Keep it concise and relevant (around 50–60 characters).'
+description: 'The title shown in search engine results and when sharing links on social media.'
 required: false
 translatable: true
 default_value: {  }

@@ -3,8 +3,10 @@ _core:
 module:
   autofill: 0
   block: 0
+  breakpoint: 0
   ckeditor5: 0
   config_pages: 0
+  crop: 0
   custom_layouts: 0
   datetime: 0
   dblog: 0
@@ -12,10 +14,12 @@ module:
   editor: 0
   entity_reference_revisions: 0
   field: 0
+  field_formatter: 0
   field_group: 0
   field_ui: 0
   file: 0
   filter: 0
+  focal_point: 0
   gin_login: 0
   gin_toolbar: 0
   image: 0
@@ -24,6 +28,7 @@ module:
   layout_paragraphs: 0
   link: 0
   locale: 0
+  maxlength: 0
   media: 0
   media_library: 0
   menu_link_content: 0
@@ -36,7 +41,9 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  responsive_image: 0
   system: 0
+  taxonomy: 0
   telephone: 0
   text: 0
   token: 0
@@ -45,6 +52,7 @@ module:
   update: 0
   user: 0
   views_ui: 0
+  viewsreference: 0
   webform: 0
   pathauto: 1
   content_translation: 10

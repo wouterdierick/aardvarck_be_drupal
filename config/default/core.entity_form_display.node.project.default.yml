@@ -5,13 +5,17 @@ dependencies:
   config:
     - field.field.node.project.field_body
     - field.field.node.project.field_paragraphs
+    - field.field.node.project.field_project_tags
     - field.field.node.project.field_seo_description
     - field.field.node.project.field_seo_image
     - field.field.node.project.field_seo_title
+    - field.field.node.project.field_teaser_image
+    - field.field.node.project.field_teaser_text
     - node.type.project
   module:
     - field_group
     - layout_paragraphs
+    - maxlength
     - media_library
     - path
     - publication_date
@@ -21,6 +25,7 @@ third_party_settings:
     group_tabs:
       children:
         - group_content
+        - group_teaser
         - group_seo
       label: Tabs
       region: content
@@ -36,6 +41,7 @@ third_party_settings:
         width_breakpoint: 640
     group_content:
       children:
+        - field_project_tags
         - field_body
         - field_paragraphs
       label: Content
@@ -59,7 +65,7 @@ third_party_settings:
       label: SEO
       region: content
       parent_name: group_tabs
-      weight: 21
+      weight: 22
       format_type: tab
       format_settings:
         classes: ''
@@ -75,7 +81,7 @@ third_party_settings:
       label: Language
       region: content
       parent_name: ''
-      weight: 5
+      weight: 8
       format_type: details_sidebar
       format_settings:
         classes: ''
@@ -94,7 +100,7 @@ third_party_settings:
       label: 'Authoring information'
       region: content
       parent_name: ''
-      weight: 4
+      weight: 7
       format_type: details_sidebar
       format_settings:
         classes: ''
@@ -105,6 +111,23 @@ third_party_settings:
         description: ''
         required_fields: true
         weight: 0
+    group_teaser:
+      children:
+        - field_teaser_image
+        - field_teaser_text
+      label: Teaser
+      region: content
+      parent_name: group_tabs
+      weight: 21
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        formatter: closed
+        description: ''
+        required_fields: true
 id: node.project.default
 targetEntityType: node
 bundle: project
@@ -118,7 +141,7 @@ content:
     third_party_settings: {  }
   field_body:
     type: text_textarea
-    weight: 10
+    weight: 4
     region: content
     settings:
       rows: 5
@@ -126,7 +149,7 @@ content:
     third_party_settings: {  }
   field_paragraphs:
     type: layout_paragraphs
-    weight: 11
+    weight: 5
     region: content
     settings:
       view_mode: default
@@ -136,6 +159,16 @@ content:
       require_layouts: 1
       empty_message: 'No paragraphs yet.'
     third_party_settings: {  }
+  field_project_tags:
+    type: entity_reference_autocomplete_tags
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_seo_description:
     type: string_textarea
     weight: 7
@@ -143,7 +176,11 @@ content:
     settings:
       rows: 5
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings:
+      maxlength:
+        maxlength_js: 160
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+        maxlength_js_enforce: false
   field_seo_image:
     type: media_library_widget
     weight: 8
@@ -162,6 +199,29 @@ content:
       autofill:
         enabled: true
         source_field: title
+      maxlength:
+        maxlength_js: 60
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+        maxlength_js_enforce: false
+  field_teaser_image:
+    type: media_library_widget
+    weight: 4
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_teaser_text:
+    type: text_textarea
+    weight: 5
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 120
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+        maxlength_js_enforce: false
   langcode:
     type: language_select
     weight: 51
@@ -171,9 +231,16 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 3
+    weight: 6
     region: content
     settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   published_at:
     type: publication_date_timestamp
@@ -197,7 +264,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 6
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -217,7 +284,6 @@ hidden:
   content_translation_source: true
   default_langcode: true
   nid: true
-  promote: true
   revision_default: true
   revision_timestamp: true
   revision_translation_affected: true

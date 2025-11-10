@@ -1,0 +1,23 @@
+uuid: 8540a23e-d522-40ef-8c38-dc6e030c1c18
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: ratio_3x1_large
+label: 'Ratio 3x1 large'
+effects:
+  edadf17b-3d22-4db1-8f40-341eb85dab2f:
+    uuid: edadf17b-3d22-4db1-8f40-341eb85dab2f
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 400
+      crop_type: focal_point
+  878c99e0-8b59-43e5-a8a3-dffaa327493e:
+    uuid: 878c99e0-8b59-43e5-a8a3-dffaa327493e
+    id: image_convert_avif
+    weight: 2
+    data:
+      extension: webp

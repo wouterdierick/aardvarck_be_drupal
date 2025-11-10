@@ -1,0 +1,23 @@
+uuid: 841a4cf3-2d9c-4adf-90f6-9a5e04707679
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: ratio_1x1_small
+label: 'Ratio 1x1 small'
+effects:
+  f847df85-580a-42cb-9a0b-ef36f41f6ef3:
+    uuid: f847df85-580a-42cb-9a0b-ef36f41f6ef3
+    id: image_convert_avif
+    weight: -8
+    data:
+      extension: webp
+  eb2c9206-9252-457c-9247-a6b8266e07b4:
+    uuid: eb2c9206-9252-457c-9247-a6b8266e07b4
+    id: focal_point_scale_and_crop
+    weight: -9
+    data:
+      width: 400
+      height: 400
+      crop_type: focal_point

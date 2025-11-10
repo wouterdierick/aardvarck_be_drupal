@@ -5,43 +5,33 @@ dependencies:
   config:
     - field.field.node.project.field_body
     - field.field.node.project.field_paragraphs
+    - field.field.node.project.field_project_tags
     - field.field.node.project.field_seo_description
     - field.field.node.project.field_seo_image
     - field.field.node.project.field_seo_title
+    - field.field.node.project.field_teaser_image
+    - field.field.node.project.field_teaser_text
     - node.type.project
   module:
-    - layout_paragraphs
-    - text
     - user
 id: node.project.default
 targetEntityType: node
 bundle: project
 mode: default
-content:
-  field_body:
-    type: text_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 0
-    region: content
-  field_paragraphs:
-    type: layout_paragraphs
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    weight: 1
-    region: content
+content: {  }
 hidden:
   changed: true
   content_translation_outdated: true
   content_translation_source: true
   default_langcode: true
+  field_body: true
+  field_paragraphs: true
+  field_project_tags: true
   field_seo_description: true
   field_seo_image: true
   field_seo_title: true
+  field_teaser_image: true
+  field_teaser_text: true
   langcode: true
   links: true
   nid: true

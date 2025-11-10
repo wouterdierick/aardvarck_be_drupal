@@ -1,0 +1,80 @@
+uuid: e2070cb5-2d84-4bdb-ab96-d58fd43d25ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card
+    - field.field.node.project.field_body
+    - field.field.node.project.field_paragraphs
+    - field.field.node.project.field_project_tags
+    - field.field.node.project.field_seo_description
+    - field.field.node.project.field_seo_image
+    - field.field.node.project.field_seo_title
+    - field.field.node.project.field_teaser_image
+    - field.field.node.project.field_teaser_text
+    - node.type.project
+  module:
+    - field_formatter
+    - text
+    - user
+id: node.project.card
+targetEntityType: node
+bundle: project
+mode: card
+content:
+  field_project_tags:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_teaser_image:
+    type: field_formatter_with_inline_settings
+    label: hidden
+    settings:
+      field_name: field_media_image
+      type: responsive_image
+      settings:
+        responsive_image_style: card
+        image_link: ''
+        image_loading:
+          attribute: lazy
+      label: hidden
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_teaser_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  changed: true
+  content_translation_outdated: true
+  content_translation_source: true
+  default_langcode: true
+  field_body: true
+  field_paragraphs: true
+  field_seo_description: true
+  field_seo_image: true
+  field_seo_title: true
+  langcode: true
+  links: true
+  nid: true
+  promote: true
+  published_at: true
+  revision_default: true
+  revision_log: true
+  revision_timestamp: true
+  revision_translation_affected: true
+  revision_uid: true
+  status: true
+  sticky: true
+  type: true
+  uuid: true
+  vid: true

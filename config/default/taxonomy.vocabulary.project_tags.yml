@@ -1,0 +1,9 @@
+uuid: 4f2f5372-48da-4acc-a1bd-682718583513
+langcode: en
+status: true
+dependencies: {  }
+name: 'Project tags'
+vid: project_tags
+description: 'A list of tags used to categorize and describe the focus or medium of each project.'
+weight: 0
+new_revision: false

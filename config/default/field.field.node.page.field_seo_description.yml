@@ -10,7 +10,7 @@ field_name: field_seo_description
 entity_type: node
 bundle: page
 label: 'SEO Description'
-description: 'A short summary that appears below the title in search results or social media previews. Aim for 150–160 characters to encourage clicks.'
+description: 'A short summary that appears below the title in search results or social media previews.'
 required: false
 translatable: true
 default_value: {  }

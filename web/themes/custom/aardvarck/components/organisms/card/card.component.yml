@@ -1,0 +1,19 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+name: Card
+group: Organisms
+props:
+  type: object
+  properties:
+    url:
+      title: URL
+      type: string
+      default: null
+slots:
+  tags:
+    title: Tags
+  image:
+    title: Image
+  title:
+    title: Title
+  summary:
+    title: Summary

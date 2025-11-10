@@ -1,0 +1,27 @@
+{#
+  Component: Contact info
+  -----------------------------------
+#}
+
+{% set base_class = 'card' %}
+{% set classes = [
+  base_class,
+  image ?? base_class ~ '--has-image',
+] %}
+
+<article {{ attributes.addClass(classes) }}>
+  {% if image %}
+  <div class="{{ base_class }}__image">
+    {{ image }}
+  </div>
+  {% endif %}
+  <div class="{{ base_class }}__content">
+    {% if tags %}
+    <div class="{{ base_class }}__tags">
+      {{ tags }}
+    </div>
+    {% endif %}
+    <h3><a href="{{ url }}">{{ title }}</a></h3>
+    {{ summary }}
+  </div>
+</article>

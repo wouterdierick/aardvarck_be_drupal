@@ -1,0 +1,21 @@
+uuid: d8a6e6c3-0408-4864-bdda-0e207aa2ade9
+langcode: en
+status: true
+dependencies: {  }
+name: scale_small
+label: 'Scale small'
+effects:
+  3efc2af9-fbdb-4be7-824a-76a623e431e2:
+    uuid: 3efc2af9-fbdb-4be7-824a-76a623e431e2
+    id: image_scale
+    weight: 1
+    data:
+      width: 400
+      height: 400
+      upscale: false
+  c99539f5-db8d-4743-9c9f-0567dd14b2e5:
+    uuid: c99539f5-db8d-4743-9c9f-0567dd14b2e5
+    id: image_convert_avif
+    weight: 2
+    data:
+      extension: webp

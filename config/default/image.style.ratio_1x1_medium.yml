@@ -1,0 +1,23 @@
+uuid: fec5233c-3d72-4d65-b94a-d26009a1df6e
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: ratio_1x1_medium
+label: 'Ratio 1x1 medium'
+effects:
+  cf2335c2-9df0-434a-8738-b26f1845cb49:
+    uuid: cf2335c2-9df0-434a-8738-b26f1845cb49
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 800
+      height: 800
+      crop_type: focal_point
+  8b17fc79-936d-4d8f-92cc-184a3b3e07dc:
+    uuid: 8b17fc79-936d-4d8f-92cc-184a3b3e07dc
+    id: image_convert_avif
+    weight: 2
+    data:
+      extension: webp

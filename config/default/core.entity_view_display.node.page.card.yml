@@ -1,0 +1,28 @@
+uuid: 5c4b48d1-4385-41fd-95a9-dc7bd627750b
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.card
+    - field.field.node.page.field_body
+    - field.field.node.page.field_paragraphs
+    - field.field.node.page.field_seo_description
+    - field.field.node.page.field_seo_image
+    - field.field.node.page.field_seo_title
+    - node.type.page
+  module:
+    - user
+id: node.page.card
+targetEntityType: node
+bundle: page
+mode: card
+content: {  }
+hidden:
+  field_body: true
+  field_paragraphs: true
+  field_seo_description: true
+  field_seo_image: true
+  field_seo_title: true
+  langcode: true
+  links: true
+  published_at: true

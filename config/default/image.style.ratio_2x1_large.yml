@@ -1,0 +1,23 @@
+uuid: c7f78b73-2b1c-4c78-8044-eb99653f2ab2
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: ratio_2x1_large
+label: 'Ratio 2x1 large'
+effects:
+  b247c253-7245-4e95-9e00-9d0ec698361c:
+    uuid: b247c253-7245-4e95-9e00-9d0ec698361c
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 600
+      crop_type: focal_point
+  2683c1ab-2279-4dd4-8780-8065b6e0c0ec:
+    uuid: 2683c1ab-2279-4dd4-8780-8065b6e0c0ec
+    id: image_convert_avif
+    weight: 2
+    data:
+      extension: webp

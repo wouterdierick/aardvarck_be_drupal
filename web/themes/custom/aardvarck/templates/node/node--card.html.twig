@@ -1,0 +1,14 @@
+{#
+/**
+ * @file
+ * Theme implementation to display a node.
+ */
+#}
+
+{% embed 'aardvarck:card' with {
+  url: url,
+  image: content.field_teaser_image|render,
+  title: label,
+  summary: content.field_teaser_text|field_value
+  } only %}
+{% endembed %}

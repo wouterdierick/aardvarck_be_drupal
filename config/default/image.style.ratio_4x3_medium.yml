@@ -1,0 +1,23 @@
+uuid: 1cfd0810-eb6a-4f5b-8901-f3032ef7ff3a
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: ratio_4x3_medium
+label: 'Ratio 4x3 medium'
+effects:
+  932511cf-ab71-4a9c-b29d-bd21567fd8f5:
+    uuid: 932511cf-ab71-4a9c-b29d-bd21567fd8f5
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 800
+      height: 600
+      crop_type: focal_point
+  d3e062d5-6b7d-4f33-b66d-650e7650e0b4:
+    uuid: d3e062d5-6b7d-4f33-b66d-650e7650e0b4
+    id: image_convert_avif
+    weight: 2
+    data:
+      extension: webp

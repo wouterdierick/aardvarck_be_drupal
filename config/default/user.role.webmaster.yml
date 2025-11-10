@@ -6,11 +6,15 @@ dependencies:
     - filter.format.advanced
     - filter.format.basic
     - node.type.page
+    - node.type.project
+    - taxonomy.vocabulary.project_tags
   module:
     - config_pages
     - content_translation
     - filter
     - node
+    - publication_date
+    - taxonomy
 id: webmaster
 label: Webmaster
 weight: -7
@@ -19,15 +23,35 @@ permissions:
   - 'access config_pages clear values option'
   - 'access config_pages overview'
   - 'create page content'
+  - 'create project content'
+  - 'create terms in project_tags'
   - 'delete any page content'
+  - 'delete any project content'
   - 'delete own page content'
+  - 'delete own project content'
   - 'delete page revisions'
+  - 'delete project revisions'
+  - 'delete term revisions in project_tags'
+  - 'delete terms in project_tags'
   - 'edit any page content'
+  - 'edit any project content'
   - 'edit config_pages entity'
   - 'edit own page content'
+  - 'edit own project content'
+  - 'edit terms in project_tags'
   - 'revert page revisions'
+  - 'revert project revisions'
+  - 'revert term revisions in project_tags'
+  - 'set page published on date'
+  - 'set project published on date'
   - 'translate page node'
+  - 'translate project node'
+  - 'translate project_tags taxonomy_term'
   - 'use text format advanced'
   - 'use text format basic'
   - 'view config_pages entity'
+  - 'view page published on date'
   - 'view page revisions'
+  - 'view project published on date'
+  - 'view project revisions'
+  - 'view term revisions in project_tags'

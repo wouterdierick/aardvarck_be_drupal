@@ -1,0 +1,23 @@
+uuid: 16539956-d87c-4f71-8d14-b447cdbb3b3b
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: ratio_3x1_small
+label: 'Ratio 3x1 small'
+effects:
+  cb065425-a6a5-4154-9eaf-c278fe69ce45:
+    uuid: cb065425-a6a5-4154-9eaf-c278fe69ce45
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 133
+      crop_type: focal_point
+  6edcd9bc-bc32-4491-bc1d-239f659796b7:
+    uuid: 6edcd9bc-bc32-4491-bc1d-239f659796b7
+    id: image_convert_avif
+    weight: 2
+    data:
+      extension: webp

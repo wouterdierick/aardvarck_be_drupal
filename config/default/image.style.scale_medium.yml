@@ -1,0 +1,21 @@
+uuid: 4b49ec7c-bd03-4a5e-83ea-af35a11a7d32
+langcode: en
+status: true
+dependencies: {  }
+name: scale_medium
+label: 'Scale medium'
+effects:
+  ede3e0f6-0642-46e4-a766-5910a208b348:
+    uuid: ede3e0f6-0642-46e4-a766-5910a208b348
+    id: image_scale
+    weight: 1
+    data:
+      width: 800
+      height: 800
+      upscale: false
+  d6408d17-08ca-44a6-9c6c-64dbce1f2e20:
+    uuid: d6408d17-08ca-44a6-9c6c-64dbce1f2e20
+    id: image_convert_avif
+    weight: 2
+    data:
+      extension: webp

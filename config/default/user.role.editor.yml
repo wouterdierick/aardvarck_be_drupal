@@ -5,17 +5,25 @@ dependencies:
   config:
     - filter.format.basic
     - node.type.page
+    - node.type.project
   module:
     - content_translation
     - filter
     - node
+    - publication_date
 id: editor
 label: Editor
 weight: -8
 is_admin: false
 permissions:
   - 'create page content'
+  - 'create project content'
   - 'delete own page content'
+  - 'delete own project content'
   - 'edit own page content'
+  - 'edit own project content'
   - 'translate page node'
+  - 'translate project node'
   - 'use text format basic'
+  - 'view page published on date'
+  - 'view project published on date'

@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - image.style.thumbnail
+    - image.style.media_library
   module:
     - image
     - media
@@ -134,7 +134,7 @@ display:
           type: image
           settings:
             image_link: ''
-            image_style: thumbnail
+            image_style: media_library
             image_loading:
               attribute: lazy
           group_column: ''

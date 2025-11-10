@@ -1,0 +1,23 @@
+uuid: 24972b85-0d09-4461-865d-7d2b1c3b487f
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: ratio_4x3_small
+label: 'Ratio 4x3 small'
+effects:
+  99433571-56f3-43ea-935b-e5b71ad30dad:
+    uuid: 99433571-56f3-43ea-935b-e5b71ad30dad
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 300
+      crop_type: focal_point
+  4157c50b-39ad-4080-9c98-976f8786f53f:
+    uuid: 4157c50b-39ad-4080-9c98-976f8786f53f
+    id: image_convert_avif
+    weight: 2
+    data:
+      extension: webp

@@ -1,0 +1,73 @@
+uuid: ab843440-afa0-42ae-b510-dc2a59daf5d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.project.field_body
+    - field.field.node.project.field_paragraphs
+    - field.field.node.project.field_project_tags
+    - field.field.node.project.field_seo_description
+    - field.field.node.project.field_seo_image
+    - field.field.node.project.field_seo_title
+    - field.field.node.project.field_teaser_image
+    - field.field.node.project.field_teaser_text
+    - node.type.project
+  module:
+    - layout_paragraphs
+    - text
+    - user
+id: node.project.full
+targetEntityType: node
+bundle: project
+mode: full
+content:
+  field_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_paragraphs:
+    type: layout_paragraphs
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_project_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  changed: true
+  content_translation_outdated: true
+  content_translation_source: true
+  default_langcode: true
+  field_seo_description: true
+  field_seo_image: true
+  field_seo_title: true
+  field_teaser_image: true
+  field_teaser_text: true
+  langcode: true
+  links: true
+  nid: true
+  promote: true
+  published_at: true
+  revision_default: true
+  revision_log: true
+  revision_timestamp: true
+  revision_translation_affected: true
+  revision_uid: true
+  status: true
+  sticky: true
+  type: true
+  uuid: true
+  vid: true

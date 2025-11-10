@@ -1,0 +1,19 @@
+uuid: 8b6c4bda-e925-4415-be9b-196e560892be
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.ratio_4x3_medium
+    - image.style.ratio_4x3_small
+  theme:
+    - aardvarck
+id: card
+label: Card
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: ratio_4x3_medium
+    breakpoint_id: tablet
+    multiplier: 1x
+breakpoint_group: aardvarck
+fallback_image_style: ratio_4x3_small

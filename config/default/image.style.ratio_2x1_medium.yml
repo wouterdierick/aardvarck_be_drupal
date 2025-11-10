@@ -1,0 +1,23 @@
+uuid: 2d5b6818-72af-4113-a570-3d75c66c98f8
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: ratio_2x1_medium
+label: 'Ratio 2x1 medium'
+effects:
+  2cc96fd6-3bd5-49ce-87cb-69c3ad24b027:
+    uuid: 2cc96fd6-3bd5-49ce-87cb-69c3ad24b027
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 800
+      height: 400
+      crop_type: focal_point
+  c088721c-145f-4c77-bb01-7aad1a5736d5:
+    uuid: c088721c-145f-4c77-bb01-7aad1a5736d5
+    id: image_convert_avif
+    weight: 2
+    data:
+      extension: webp
