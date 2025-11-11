@@ -26,5 +26,6 @@ settings:
     block: block
   preselect_views:
     projects: projects
-  enabled_settings: {  }
+  enabled_settings:
+    title: title
 field_type: viewsreference

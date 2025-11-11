@@ -22,7 +22,7 @@
   {% endembed %}
 
   {{ page.highlighted }}
-  {{ page.breadcrumb }}
+
 
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
@@ -42,6 +42,8 @@
     {% endif %}
 
   </main>
+
+  {{ page.breadcrumb }}
 
   {% embed 'aardvarck:site-footer' with {
     contact_info: page.footer.aardvarck_contact_info

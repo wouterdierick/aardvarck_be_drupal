@@ -1,0 +1,22 @@
+label: Projecten
+display:
+  default:
+    display_options:
+      title: 'Alle projecten'
+      exposed_form:
+        options:
+          submit_button: Toepassen
+          exposed_sorts_label: Sorteren
+      sorts:
+        field_weight_value:
+          expose:
+            label: Relevantie
+        field_project_date_value:
+          expose:
+            label: Datum
+  projects_all:
+    display_options:
+      filters:
+        field_project_tags_target_id_1:
+          expose:
+            label: Categorie

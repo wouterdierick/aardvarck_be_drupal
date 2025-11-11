@@ -6,12 +6,14 @@ dependencies:
     - core.entity_view_mode.node.card
     - field.field.node.project.field_body
     - field.field.node.project.field_paragraphs
+    - field.field.node.project.field_project_date
     - field.field.node.project.field_project_tags
     - field.field.node.project.field_seo_description
     - field.field.node.project.field_seo_image
     - field.field.node.project.field_seo_title
     - field.field.node.project.field_teaser_image
     - field.field.node.project.field_teaser_text
+    - field.field.node.project.field_weight
     - node.type.project
   module:
     - field_formatter
@@ -60,9 +62,11 @@ hidden:
   default_langcode: true
   field_body: true
   field_paragraphs: true
+  field_project_date: true
   field_seo_description: true
   field_seo_image: true
   field_seo_title: true
+  field_weight: true
   langcode: true
   links: true
   nid: true
