@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4fdae11ca4619da57970451ce6c62807",
+    "content-hash": "c63e5c23e72a732d4ea238fa11e1204a",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1084,6 +1084,58 @@
                 }
             ],
             "time": "2024-02-05T11:35:39+00:00"
+        },
+        {
+            "name": "drupal/antibot",
+            "version": "2.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/antibot.git",
+                "reference": "2.0.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/antibot-2.0.4.zip",
+                "reference": "2.0.4",
+                "shasum": "58b215291b250ea410194693cbac2da6f54a8530"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9 || ^10 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.4",
+                    "datestamp": "1723819813",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "danrod",
+                    "homepage": "https://www.drupal.org/user/19150"
+                },
+                {
+                    "name": "gaurav.kapoor",
+                    "homepage": "https://www.drupal.org/user/3495331"
+                },
+                {
+                    "name": "mstef",
+                    "homepage": "https://www.drupal.org/user/107190"
+                }
+            ],
+            "description": "Prevent forms from being submitted without JavaScript enabled.",
+            "homepage": "https://www.drupal.org/project/antibot",
+            "support": {
+                "source": "https://git.drupalcode.org/project/antibot"
+            }
         },
         {
             "name": "drupal/autofill",
@@ -2242,6 +2294,76 @@
             ]
         },
         {
+            "name": "drupal/honeypot",
+            "version": "2.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/honeypot.git",
+                "reference": "2.2.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/honeypot-2.2.2.zip",
+                "reference": "2.2.2",
+                "shasum": "828872d31d1a2c37a818cacae7fcd77a60996c66"
+            },
+            "require": {
+                "drupal/core": "^10.3 || ^11"
+            },
+            "require-dev": {
+                "drupal/rules": "^4.0",
+                "drupal/webform": "^6.2"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.2.2",
+                    "datestamp": "1739854442",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jeff Geerling",
+                    "homepage": "https://www.drupal.org/user/389011",
+                    "email": "geerlingguy@mac.com"
+                },
+                {
+                    "name": "manuel garcia",
+                    "homepage": "https://www.drupal.org/user/213194"
+                },
+                {
+                    "name": "tr",
+                    "homepage": "https://www.drupal.org/user/202830"
+                },
+                {
+                    "name": "vijaycs85",
+                    "homepage": "https://www.drupal.org/user/93488"
+                }
+            ],
+            "description": "Mitigates spam form submissions using the honeypot method.",
+            "homepage": "https://www.drupal.org/project/honeypot",
+            "keywords": [
+                "deterrent",
+                "form",
+                "honeypot",
+                "honeytrap",
+                "php",
+                "spam"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/honeypot",
+                "issues": "https://www.drupal.org/project/issues/honeypot"
+            }
+        },
+        {
             "name": "drupal/layout_paragraphs",
             "version": "2.1.1",
             "source": {
@@ -2858,6 +2980,55 @@
             }
         },
         {
+            "name": "drupal/selective_better_exposed_filters",
+            "version": "3.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/selective_better_exposed_filters.git",
+                "reference": "3.0.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/selective_better_exposed_filters-3.0.3.zip",
+                "reference": "3.0.3",
+                "shasum": "31890e23361bf22641b2355c78c5e21c02e2e1bc"
+            },
+            "require": {
+                "drupal/better_exposed_filters": "^4.0 || ^5.0 || ^6.0 || ^7.0",
+                "drupal/core": "^8 || ^9 || ^10 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.3",
+                    "datestamp": "1719744192",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "stomusic",
+                    "homepage": "https://www.drupal.org/user/3405436"
+                }
+            ],
+            "description": "Provide extra option for better exposed filters to show only used terms in filter.",
+            "homepage": "https://www.drupal.org/project/selective_better_exposed_filters",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/selective_better_exposed_filters",
+                "issues": "https://www.drupal.org/project/issues/selective_better_exposed_filters"
+            }
+        },
+        {
             "name": "drupal/token",
             "version": "1.16.0",
             "source": {
@@ -3111,6 +3282,66 @@
             "homepage": "https://www.drupal.org/project/views_ajax_history",
             "support": {
                 "source": "https://git.drupalcode.org/project/views_ajax_history"
+            }
+        },
+        {
+            "name": "drupal/views_selective_filters",
+            "version": "2.0.0-alpha2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/views_selective_filters.git",
+                "reference": "2.0.0-alpha2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/views_selective_filters-2.0.0-alpha2.zip",
+                "reference": "2.0.0-alpha2",
+                "shasum": "f9c5ce8d7c46a79a09b436f9a3102bf2962fb082"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0-alpha2",
+                    "datestamp": "1712966833",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "david_garcia",
+                    "homepage": "https://www.drupal.org/user/696200"
+                },
+                {
+                    "name": "dhirendra.mishra",
+                    "homepage": "https://www.drupal.org/user/2807575"
+                },
+                {
+                    "name": "gaurav.kapoor",
+                    "homepage": "https://www.drupal.org/user/3495331"
+                },
+                {
+                    "name": "joelpittet",
+                    "homepage": "https://www.drupal.org/user/160302"
+                },
+                {
+                    "name": "philltran",
+                    "homepage": "https://www.drupal.org/user/295397"
+                }
+            ],
+            "description": "Restrict exposed filter values to those present in the result set.",
+            "homepage": "https://www.drupal.org/project/views_selective_filters",
+            "support": {
+                "source": "https://git.drupalcode.org/project/views_selective_filters"
             }
         },
         {
@@ -8184,6 +8415,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "drupal/field_tools": 15,
+        "drupal/views_selective_filters": 15,
         "drupal/viewsreference": 10,
         "drupal/webform": 10
     },
