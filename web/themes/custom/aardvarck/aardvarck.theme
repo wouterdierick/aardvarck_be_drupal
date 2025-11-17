@@ -6,6 +6,7 @@
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Link;
 
 /**
  * Implements hook_preprocess_html().
@@ -59,5 +60,29 @@ function aardvarck_preprocess_paragraph(array &$variables) {
   if ($paragraph->bundle() === 'layout') {
     $background = $paragraph->get('field_background_style')->value ?? 'transparent';
     $variables['custom_values']['background_style'] = $background;
+  }
+}
+
+/**
+ * Implements hook_preprocess_breadcrumb().
+ */
+function aardvarck_preprocess_breadcrumb(array &$variables) {
+  $request = \Drupal::request();
+  $route = \Drupal::routeMatch()->getRouteObject();
+  if (!$route) {
+    return;
+  }
+
+  // Append a non-linked crumb.
+  $title = \Drupal::service('title_resolver')->getTitle($request, $route);
+  if (isset($title)) {
+    $title = (string) $title;
+    if ($title !== '') {
+      $variables['links'][] = Link::createFromRoute($title, '<none>');
+      $variables['breadcrumb'][] = [
+        'text' => $title,
+        'url' => null,
+      ];
+    }
   }
 }

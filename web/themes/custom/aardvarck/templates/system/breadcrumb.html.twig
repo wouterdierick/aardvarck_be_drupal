@@ -1,0 +1,9 @@
+{#
+/**
+ * @file
+ * Theme implementation for a breadcrumb trail.
+ */
+#}
+{% if breadcrumb %}
+  {{ include('aardvarck:breadcrumb', { items: breadcrumb }, with_context = false) }}
+{% endif %}

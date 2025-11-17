@@ -12,6 +12,10 @@ props:
         - horizontal
         - vertical
       default: horizontal
+    attributes:
+      title: Attributes
+      type: Drupal\Core\Template\Attribute
+      default: {}
     title:
       type: ['string', 'null']
       title: Title

@@ -1,5 +1,34 @@
 .card {
-  border: solid 1px red;
+  --cardColor: var(--colorWhite);
+  --cardBorderRadius: calc(var(--borderRadiusLayout) - var(--gutterMedium));
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22card.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AACA;EACE%22,%22file%22:%22card.css%22%7D */
+.card {
+  position: relative;
+}
+.card__overlay-link {
+  position: absolute;
+  z-index: 1;
+  inset-inline: 0;
+  inset-block: 0;
+}
+.card a:not(.card__overlay-link) {
+  position: relative;
+  z-index: 2;
+}
+
+.card {
+  background-color: var(--cardColor);
+  border-radius: var(--cardBorderRadius);
+  max-inline-size: 400px;
+}
+.card__image img {
+  display: block;
+  border-start-start-radius: var(--cardBorderRadius);
+  border-start-end-radius: var(--cardBorderRadius);
+}
+.card__content {
+  padding: var(--gutterMedium);
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22card.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAQA;EACE;EACA;;;AAIF;EACE;;AAEA;EACE;EACA;EACA;EACA;;AAGF;EACE;EACA;;;AAKJ;EACE;EACA;EACA;;AAGE;EACE;EACA;EACA;;AAIJ;EACE%22,%22file%22:%22card.css%22%7D */

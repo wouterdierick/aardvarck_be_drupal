@@ -6,10 +6,14 @@
 {% set base_class = 'card' %}
 {% set classes = [
   base_class,
-  image ?? base_class ~ '--has-image',
+  image ? base_class ~ '--has-image',
 ] %}
 
 <article {{ attributes.addClass(classes) }}>
+  {# Fully clickable card #}
+  <a href="{{ url }}" class="{{ base_class }}__overlay-link"><span class="visually-hidden">{{ "Read more about"|t ~ " " ~ title|field_value|render }}</span></a>
+
+
   {% if image %}
   <div class="{{ base_class }}__image">
     {{ image }}
@@ -21,7 +25,11 @@
       {{ tags }}
     </div>
     {% endif %}
-    <h3><a href="{{ url }}">{{ title }}</a></h3>
-    {{ summary }}
+    <h3 class="{{ base_class }}__title">{{ title }}</h3>
+    {% if summary %}
+      <div class="{{ base_class }}__summary">
+      {{ summary }}
+      </div>
+    {% endif %}
   </div>
 </article>

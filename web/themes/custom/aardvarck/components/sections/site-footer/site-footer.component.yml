@@ -3,7 +3,15 @@ name: Site footer
 group: Sections
 props:
   type: object
-  properties: {}
+  properties:
+    attributes:
+      title: Attributes
+      type: Drupal\Core\Template\Attribute
+      default: {}
 slots:
+  breadcrumb:
+    title: Breadcrumb
   contact_info:
     title: Contact info
+  footer_navigation:
+    title: Footer navigation

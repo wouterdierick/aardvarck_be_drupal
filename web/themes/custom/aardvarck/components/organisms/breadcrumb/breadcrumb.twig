@@ -1,0 +1,33 @@
+{#
+  Component: Main navigation
+  -----------------------------------
+#}
+
+{% set base_class = 'breadcrumb' %}
+{% set classes = [
+  base_class,
+] %}
+
+<nav {{ attributes.addClass(classes).setAttribute('aria-label', "Breadcrumb"|t) }}>
+  <ol>
+    {% for item in items %}
+      <li>
+        {% if loop.first %}
+          <a href="{{ item.url }}">{{ include('aardvarck:icon', { name: 'home-alt', size: 'small' }, with_context = false) }}<span class="visually-hidden">{{ item.text }}</span></a>
+          {{ include('aardvarck:icon', { name: 'chevron-right', size: 'small' }, with_context = false) }}
+        {% elseif not loop.last %}
+          {% if item.url %}
+            <a href="{{ item.url }}">{{ item.text }}</a>
+          {% else %}
+            {{ item.text }}
+          {% endif %}
+          {{ include('aardvarck:icon', { name: 'chevron-right', size: 'small' }, with_context = false) }}
+        {% else %}
+          <span aria-current="page">
+            {{ item.text }}
+          </span>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ol>
+</nav>

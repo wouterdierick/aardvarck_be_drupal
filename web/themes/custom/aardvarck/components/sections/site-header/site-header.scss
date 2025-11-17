@@ -9,7 +9,7 @@ $base_class: "site-header";
   --colorHeaderBackground: var(--colorSecondary);
 }
 
-.#{$base_class}{
+.#{$base_class} {
   position: relative;
   min-height: mixins.ptr(64);
   padding: var(--gutterMedium);

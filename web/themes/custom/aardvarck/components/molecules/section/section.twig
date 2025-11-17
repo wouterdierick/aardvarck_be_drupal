@@ -1,0 +1,14 @@
+{#
+  Component: Section
+  -----------------------------------
+#}
+
+{% set base_class = 'section' %}
+{% set classes = [
+  base_class,
+  variant ? base_class ~ '--' ~variant,
+] %}
+
+<section {{ attributes.addClass(classes) }}>
+  {{ content }}
+</section>

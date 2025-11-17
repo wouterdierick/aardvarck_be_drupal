@@ -1,6 +1,6 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
-name: Site header
-group: Sections
+name: Section
+group: Molecules
 props:
   type: object
   properties:
@@ -12,17 +12,10 @@ props:
       title: Variant
       type: string
       enum:
-        - default
-        - home
-      default: default
-    logo_url:
-      title: Logo URL
-      type: string
-      default: '/'
+        - transparent
+        - grey
+        - primary
+        - secondary
 slots:
-  main_navigation:
-    title: Main navigation
-  language_switcher:
-    title: Language switcher
   content:
     title: Content

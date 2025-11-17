@@ -1,0 +1,16 @@
+.breadcrumb ol {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.breadcrumb ol li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22breadcrumb.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAQE;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA%22,%22file%22:%22breadcrumb.css%22%7D */

@@ -6,15 +6,14 @@
 #}
 {%
   set classes = [
-    'section',
     'section--paragraph-layout',
-    'section--' ~ custom_values.background_style
   ]
 %}
 {% block paragraph %}
-  <section{{ attributes.addClass(classes) }}>
-    {% block content %}
-      {{ content }}
-    {% endblock %}
-  </section>
+  {% embed 'aardvarck:section' with {
+    variant: custom_values.background_style,
+    attributes: attributes.addClass(classes),
+    content: content
+    } only %}
+  {% endembed %}
 {% endblock paragraph %}

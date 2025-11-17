@@ -31,22 +31,28 @@
     {% if is_node or is_taxonomy_page %}
       {{ page.content }}
     {% else %}
-      <section class="section section--site-content section--grey">
+      {% set page_content %}
         <div class="layout layout--cols-1">
           <div class="layout__region layout__region--col-1">
             <h1>{{ page['#title'] }}</h1>
             {{ page.content }}
           </div>
         </div>
-      </section>
+      {% endset %}
+      {% embed 'aardvarck:section' with {
+        variant: 'grey',
+        attributes: create_attribute({'class': ['section--site-content']}),
+        content: page_content
+        } only %}
+      {% endembed %}
     {% endif %}
 
   </main>
 
-  {{ page.breadcrumb }}
-
   {% embed 'aardvarck:site-footer' with {
-    contact_info: page.footer.aardvarck_contact_info
+    breadcrumb: page.breadcrumb,
+    contact_info: page.footer.aardvarck_contact_info,
+    footer_navigation: page.footer.aardvarck_footernavigation
     } only %}
   {% endembed %}
 

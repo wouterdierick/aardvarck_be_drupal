@@ -1,0 +1,9 @@
+{#
+/**
+ * @file
+ * Theme implementation for an 'input' #type form element.
+ */
+#}
+{% set label = attributes['value'] ?? 'Submit'|t %}
+{{ include('aardvarck:button', { element: 'input', label: label, variant: 'primary', attributes: attributes }, with_context = false) }}
+{{ children }}

@@ -1,6 +1,52 @@
 
-.card {
-  border: solid 1px red;
+// Component: Main Navigation
+// --------------------------------------------------
+
+@use 'abstracts/mixins' as mixins;
+
+$base_class: "card";
+
+.#{$base_class} {
+  --cardColor: var(--colorWhite);
+  --cardBorderRadius: calc(var(--borderRadiusLayout) - var(--gutterMedium));
 }
 
+// Overlay link.
+.#{$base_class} {
+  position: relative;
 
+  &__overlay-link {
+    position: absolute;
+    z-index: 1;
+    inset-inline: 0;
+    inset-block: 0;
+  }
+
+  a:not(.card__overlay-link) {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+// Card layout.
+.#{$base_class} {
+  background-color: var(--cardColor);
+  border-radius: var(--cardBorderRadius);
+  max-inline-size: 400px;
+
+  &__image {
+    img {
+      display: block;
+      border-start-start-radius: var(--cardBorderRadius);
+      border-start-end-radius: var(--cardBorderRadius);
+    }
+  }
+
+  &__content {
+    padding: var(--gutterMedium);
+  }
+
+  &__tags {
+
+  }
+}

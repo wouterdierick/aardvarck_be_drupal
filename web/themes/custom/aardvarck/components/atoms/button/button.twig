@@ -1,0 +1,27 @@
+{#
+  Atom: Button
+  -----------------------------------
+#}
+
+{% set base_class = 'button' %}
+{% set element = element ?? 'a' %}
+{% set href = href ?? '#' %}
+{% set variant = variant ?? 'primary' %}
+
+{% set classes = [
+  base_class,
+  variant ? base_class ~ '--' ~ variant,
+] %}
+
+{% if element == 'button' %}
+  <button {{ attributes.addClass(classes) }}>{{ label }}</button>
+{% elseif element == 'input' %}
+  {% if not attributes.hasAttribute('type') %}
+    {% set attributes = attributes.setAttribute('type', 'submit') %}
+  {% endif %}
+  {% set attributes = attributes.setAttribute('value', label) %}
+  <input {{ attributes.addClass(classes) }} />
+{% else %}
+  <a href="{{ href }}" {{ attributes.addClass(classes) }}>{{ label }}</a>
+{% endif %}
+

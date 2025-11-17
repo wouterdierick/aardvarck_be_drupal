@@ -1,0 +1,36 @@
+// Molecule: Section
+// --------------------------------------------------
+
+@use "abstracts/mixins" as mixins;
+
+$base_class: "section";
+
+.#{$base_class} {
+  position: relative;
+  margin-block-end: var(--gutterLarge);
+  padding: var(--gutterMedium);
+  border-radius: var(--borderRadiusLayout);
+
+  @include mixins.bp('desktop') {
+    padding: var(--gutterLarge);
+  }
+}
+
+.#{$base_class} {
+  &--transparent {
+    padding-block: 0;
+    background-color: transparent;
+  }
+
+  &--grey {
+    background-color: var(--colorNeutral100);
+  }
+
+  &--primary {
+    background-color: var(--colorPrimary);
+  }
+
+  &--secondary {
+    background-color: var(--colorSecondary);
+  }
+}

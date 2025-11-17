@@ -1,9 +1,17 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
-name: Site header
-group: Sections
+name: Section
+group: Molecules
 props:
   type: object
   properties:
+    element:
+      title: Element
+      type: string
+      default: a
+      enum:
+        - a
+        - button
+        - input
     attributes:
       title: Attributes
       type: Drupal\Core\Template\Attribute
@@ -11,18 +19,15 @@ props:
     variant:
       title: Variant
       type: string
+      default: primary
       enum:
-        - default
-        - home
-      default: default
-    logo_url:
-      title: Logo URL
+        - link
+        - grey
+        - primary
+        - secondary
+    href:
+      title: Href
       type: string
-      default: '/'
 slots:
-  main_navigation:
-    title: Main navigation
-  language_switcher:
-    title: Language switcher
-  content:
-    title: Content
+  label:
+    title: Label

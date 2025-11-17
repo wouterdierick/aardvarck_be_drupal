@@ -1,0 +1,24 @@
+// Component: Breadcrumb
+// --------------------------------------------------
+
+@use 'abstracts/mixins' as mixins;
+
+$base_class: "breadcrumb";
+
+.#{$base_class} {
+  ol {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: mixins.ptr(8);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: mixins.ptr(8);
+    }
+  }
+}

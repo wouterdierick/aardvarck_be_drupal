@@ -4,21 +4,29 @@
  * Theme implementation to display a node.
  */
 #}
-<article{{ attributes }}>
 
-  <section class="section section--site-content section--grey">
-    <div class="layout layout--cols-1">
-      <div class="layout__region layout__region--col-1">
-        {{ title_prefix }}
-        <h1{{ title_attributes }}>{{ label }}</h1>
-        {{ title_suffix }}
-        <div{{ content_attributes }}>
-          {{ content|without('field_paragraphs') }}
-        </div>
+{% set node_header %}
+  <div class="layout layout--cols-1">
+    <div class="layout__region layout__region--col-1">
+      {{ title_prefix }}
+      <h1{{ title_attributes }}>{{ label }}</h1>
+      {{ title_suffix }}
+      <div{{ content_attributes }}>
+        {{ content|without('field_paragraphs') }}
       </div>
     </div>
-  </section>
+  </div>
+{% endset %}
 
+<article{{ attributes }}>
+  {# title and fields #}
+  {% embed 'aardvarck:section' with {
+    variant: 'grey',
+    attributes: create_attribute({'class': ['section--node-content']}),
+    content: node_header
+    } only %}
+  {% endembed %}
+
+  {# paragraph sections #}
   {{ content.field_paragraphs }}
-
 </article>

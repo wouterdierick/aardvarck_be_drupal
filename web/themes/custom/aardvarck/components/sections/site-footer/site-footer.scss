@@ -6,6 +6,9 @@
 $base_class: "site-footer";
 
 .#{$base_class} {
+  .breadcrumb {
+    margin-block: var(--gutterLarge);
+  }
   .logo {
     margin-block-end: var(--gutterMedium);
   }
