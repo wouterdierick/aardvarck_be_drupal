@@ -1,14 +1,14 @@
-// Atom: Button
+// Atom: Pill
 // --------------------------------------------------
 
 @use "abstracts/mixins" as mixins;
 
-$base_class: "button";
+$base_class: "pill";
 
 .#{$base_class} {
-  --fontSizeButton: #{mixins.ptr(16)};
-  --buttonPadding: #{mixins.ptr(8)} #{mixins.ptr(16)};
-  --buttonBorderRadius: #{mixins.ptr(8)};
+  --fontSizePill: #{mixins.ptr(14)};
+  --pillPadding: #{mixins.ptr(2)} #{mixins.ptr(8)};
+  --pillBorderRadius: #{mixins.ptr(8)};
 }
 
 .#{$base_class} {
@@ -17,24 +17,14 @@ $base_class: "button";
   text-decoration: none;
   cursor: pointer;
   user-select: none;
-  padding: var(--buttonPadding);
+  padding: var(--pillPadding);
   border: 0 none;
-  border-radius: var(--buttonBorderRadius);
-  font-size: var(--fontSizeButton);
+  border-radius: var(--pillBorderRadius);
+  font-size: var(--fontSizePill);
   color: var(--colorWhite);
 }
 
 .#{$base_class} {
-  &--link {
-    padding: 0;
-    color: var(--colorLink);
-    text-decoration: underline;
-    &:hover,
-    &:focus {
-      color: var(--colorLinkHover);
-    }
-  }
-
   &--grey {
     background-color: var(--colorNeutral300);
     &:hover,

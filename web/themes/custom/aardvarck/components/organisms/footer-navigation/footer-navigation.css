@@ -1,0 +1,30 @@
+.footer-navigation ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-navigation ul li > a {
+  color: var(--colorText);
+  text-decoration: underline;
+}
+.footer-navigation ul li > a:hover, .footer-navigation ul li > a:focus {
+  color: var(--colorLinkHover);
+}
+.footer-navigation ul li.active > a {
+  color: var(--colorText);
+  font-weight: var(--fontWeightMedium);
+}
+.footer-navigation ul li.active > a:hover, .footer-navigation ul li.active > a:focus {
+  color: var(--colorLinkHover);
+}
+@media (min-width: 431px) {
+  .footer-navigation ul {
+    flex-direction: row;
+    gap: var(--gutterMedium);
+  }
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22footer-navigation.scss%22,%22../../../sass/abstracts/_mixins.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAQE;EACE;EACA;EACA;EACA;EACA;EACA;;AAGE;EACE;EACA;;AACA;EAEE;;AAGJ;EACE;EACA;;AACA;EAEE;;ACiHN;ED1GA;IACE;IACA%22,%22file%22:%22footer-navigation.css%22%7D */

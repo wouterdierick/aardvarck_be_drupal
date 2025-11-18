@@ -5,11 +5,47 @@
 
 $base_class: "site-footer";
 
+$info_background: var(--colorWhite);
+$info_border: solid 5px var(--colorNeutral200);
+$info_tail_size: mixins.ptr(20);
+
 .#{$base_class} {
-  .breadcrumb {
-    margin-block: var(--gutterLarge);
+
+  &__info-wrapper {
+    position: relative;
+    max-width: 500px;
+    padding: var(--gutterLarge);
+    background-color: $info_background;
+    border: $info_border;
+    border-radius: var(--borderRadiusLayout);
+    &:before {
+      content: "";
+      position: absolute;
+      left: 40px;
+      top: calc(#{$info_tail_size} * -0.65);
+      rotate: 45deg;
+      display: block;
+      width: $info_tail_size;
+      height: $info_tail_size;
+      background-color: $info_background;
+      border-top: $info_border;
+      border-left: $info_border;
+    }
   }
+
   .logo {
     margin-block-end: var(--gutterMedium);
+  }
+
+  &__navigation-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: mixins.ptr(12);
+    margin-block: var(--gutterLarge);
+    margin-inline: var(--gutterLarge);
+    padding-block-start: var(--gutterMedium);
+    font-size: mixins.ptr(14);
+    border-top: var(--borderDefault);
   }
 }

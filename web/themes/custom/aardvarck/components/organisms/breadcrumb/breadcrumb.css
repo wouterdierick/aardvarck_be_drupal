@@ -1,3 +1,9 @@
+.breadcrumb {
+  line-height: 1;
+}
+.breadcrumb .icon {
+  transform: translateY(-1px);
+}
 .breadcrumb ol {
   display: flex;
   flex-wrap: wrap;
@@ -12,5 +18,15 @@
   align-items: center;
   gap: 0.5rem;
 }
+.breadcrumb ol li a {
+  color: var(--colorText);
+  text-decoration: underline;
+}
+.breadcrumb ol li a:hover, .breadcrumb ol li a:focus {
+  color: var(--colorLinkHover);
+}
+.breadcrumb ol li span.current-page {
+  font-weight: var(--fontWeightMedium);
+}
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22breadcrumb.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAQE;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA%22,%22file%22:%22breadcrumb.css%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22breadcrumb.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAOA;EACE;;AAEA;EACE;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;;AAEA;EACE;EACA;;AACA;EAEE;;AAIJ;EACE%22,%22file%22:%22breadcrumb.css%22%7D */

@@ -45,8 +45,8 @@ a {
   text-decoration: none;
   outline-offset: 4px;
   -moz-outline-radius: 4px;
-
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--colorLinkHover);
   }
 
@@ -62,8 +62,8 @@ a {
   text-decoration: underline;
   text-decoration-color: var(--colorLinkUnderline);
   text-underline-offset: mixins.ptr(5);
-
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--colorLinkHover);
     text-decoration-color: var(--colorLinkHover);
   }

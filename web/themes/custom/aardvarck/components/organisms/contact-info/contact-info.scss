@@ -9,11 +9,7 @@ $base_class: "contact-info";
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: var(--gutterMedium);
-
-  @include mixins.bp('tablet') {
-    gap: var(--gutterLarge);
-  }
+  gap: var(--gutterMedium) var(--gutterLarge);
 
   p {
     margin: mixins.ptr(8) 0;
@@ -21,7 +17,8 @@ $base_class: "contact-info";
 
   a {
     color: var(--colorText);
-    &:hover {
+    &:hover,
+    &:focus {
       color: var(--colorLinkHover);
     }
   }

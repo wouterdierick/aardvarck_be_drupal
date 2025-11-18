@@ -1,0 +1,20 @@
+{#
+  Atom: Pill
+  -----------------------------------
+#}
+
+{% set base_class = 'pill' %}
+{% set href = href ?? '#' %}
+{% set variant = variant ?? 'primary' %}
+
+{% set classes = [
+  base_class,
+  variant ? base_class ~ '--' ~ variant,
+] %}
+
+{% if href %}
+  <a href="{{ href }}" {{ attributes.addClass(classes) }}>{{ label }}</a>
+{% else %}
+  <span {{ attributes.addClass(classes) }}>{{ label }}</span>
+{% endif %}
+

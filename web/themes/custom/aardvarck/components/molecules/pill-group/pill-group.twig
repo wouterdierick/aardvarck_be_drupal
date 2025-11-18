@@ -1,0 +1,23 @@
+{#
+  Atom: Pill
+  -----------------------------------
+#}
+
+{% set base_class = 'pill-group' %}
+{% set href = href ?? '#' %}
+{% set variant = variant ?? 'primary' %}
+
+{% set classes = [
+  base_class,
+] %}
+
+<div {{ attributes.addClass(classes) }}>
+  {% if title %}
+    <p class="{{ base_class }}__title">{{ title }}</p>
+  {% endif %}
+  <div class="{{ base_class }}__wrapper">
+    {% for pill in pills %}
+      {{ include('aardvarck:pill', { label: pill.label, href: pill.href, variant: pill.variant|default(variant) }, with_context = false) }}
+    {% endfor %}
+  </div>
+</div>

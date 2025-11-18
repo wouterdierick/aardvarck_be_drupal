@@ -1,0 +1,20 @@
+{#
+/**
+ * @file
+ * Theme implementation for a field.
+ */
+#}
+
+{% set pill_items = [] %}
+{% for item in items %}
+  {% set pill_items = pill_items|merge([{
+    label: item.content['#title'],
+    href: item.content['#url'],
+  }]) %}
+{% endfor %}
+
+{{ include('aardvarck:pill-group', {
+  title: 'Tags',
+  variant: 'primary',
+  pills: pill_items,
+}, with_context = false) }}

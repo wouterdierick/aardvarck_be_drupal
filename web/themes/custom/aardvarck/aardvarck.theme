@@ -73,7 +73,17 @@ function aardvarck_preprocess_breadcrumb(array &$variables) {
     return;
   }
 
-  // Append a non-linked crumb.
+  // Make sure home is always present.
+  if(false) {
+    $title = 'Home';
+    $variables['links'][] = Link::createFromRoute($title, '<front>');
+    $variables['breadcrumb'][] = [
+      'text' => $title,
+      'url' => '/',
+    ];
+  }
+
+  // Append current page.
   $title = \Drupal::service('title_resolver')->getTitle($request, $route);
   if (isset($title)) {
     $title = (string) $title;

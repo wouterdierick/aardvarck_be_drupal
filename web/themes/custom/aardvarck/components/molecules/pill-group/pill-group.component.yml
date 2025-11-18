@@ -1,0 +1,37 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+name: Pill Group
+group: Molecules
+props:
+  type: object
+  properties:
+    attributes:
+      title: Attributes
+      type: Drupal\Core\Template\Attribute
+      default: {}
+    title:
+      title: Title
+      type: string
+    variant:
+      title: Variant (applies to all pills unless overridden)
+      type: string
+      default: primary
+      enum:
+        - grey
+        - primary
+        - secondary
+slots:
+  pills:
+    title: Pills
+    type: array
+    items:
+      type: object
+      properties:
+        label:
+          title: Label
+          type: string
+        href:
+          title: Href
+          type: string
+        variant:
+          title: Variant override
+          type: string

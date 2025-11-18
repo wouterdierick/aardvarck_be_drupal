@@ -6,6 +6,12 @@
 $base_class: "breadcrumb";
 
 .#{$base_class} {
+  line-height: 1;
+
+  .icon {
+    transform: translateY(-1px);
+  }
+
   ol {
     display: flex;
     flex-wrap: wrap;
@@ -19,6 +25,19 @@ $base_class: "breadcrumb";
       display: flex;
       align-items: center;
       gap: mixins.ptr(8);
+
+      a {
+        color: var(--colorText);
+        text-decoration: underline;
+        &:hover,
+        &:focus {
+          color: var(--colorLinkHover);
+        }
+      }
+
+      span.current-page {
+        font-weight: var(--fontWeightMedium);
+      }
     }
   }
 }

@@ -1,0 +1,10 @@
+.pill-group__title {
+  font-weight: var(--fontWeightMedium);
+}
+.pill-group__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22pill-group.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAQE;EACE;;AAEF;EACE;EACA;EACA%22,%22file%22:%22pill-group.css%22%7D */

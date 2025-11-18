@@ -1,6 +1,6 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
-name: Section
-group: Molecules
+name: Pill
+group: Atoms
 props:
   type: object
   properties:
@@ -11,11 +11,14 @@ props:
     variant:
       title: Variant
       type: string
+      default: primary
       enum:
-        - transparent
         - grey
         - primary
         - secondary
+    href:
+      title: Href
+      type: string
 slots:
-  content:
-    title: Content
+  label:
+    title: Label

@@ -18,14 +18,16 @@ $base_class: "main-navigation";
     li {
       > a {
         color: var(--colorMenu, --colorText);
-        &:hover {
+        &:hover,
+        &:focus {
           color: var(--colorMenuHover, var(--colorLinkHover));
         }
       }
       &.active > a {
         color: var(--colorMenuActive, var(--colorText));
         font-weight: var(--fontWeightBold);
-        &:hover {
+        &:hover,
+        &:focus {
           color: var(--colorMenuActiveHover, var(--colorLinkHover));
         }
       }

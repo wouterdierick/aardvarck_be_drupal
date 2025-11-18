@@ -1,0 +1,42 @@
+.pill {
+  --fontSizePill: 0.875rem;
+  --pillPadding: 0.125rem 0.5rem;
+  --pillBorderRadius: 0.5rem;
+}
+
+.pill {
+  display: inline-block;
+  appearance: none;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  padding: var(--pillPadding);
+  border: 0 none;
+  border-radius: var(--pillBorderRadius);
+  font-size: var(--fontSizePill);
+  color: var(--colorWhite);
+}
+
+.pill--grey {
+  background-color: var(--colorNeutral300);
+}
+.pill--grey:hover, .pill--grey:focus {
+  color: var(--colorWhite);
+  background-color: var(--colorLinkHover);
+}
+.pill--primary {
+  background-color: var(--colorPrimary);
+}
+.pill--primary:hover, .pill--primary:focus {
+  color: var(--colorWhite);
+  background-color: var(--colorLinkHover);
+}
+.pill--secondary {
+  background-color: var(--colorSecondary);
+}
+.pill--secondary:hover, .pill--secondary:focus {
+  color: var(--colorWhite);
+  background-color: var(--colorLinkHover);
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22pill.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAOA;EACE;EACA;EACA;;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAIA;EACE;;AACA;EAEE;EACA;;AAIJ;EACE;;AACA;EAEE;EACA;;AAIJ;EACE;;AACA;EAEE;EACA%22,%22file%22:%22pill.css%22%7D */

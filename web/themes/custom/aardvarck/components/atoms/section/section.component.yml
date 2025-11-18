@@ -1,7 +1,6 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
-name: Main navigation
-description: Main navigation
-group: Organisms
+name: Section
+group: Atoms
 props:
   type: object
   properties:
@@ -9,4 +8,14 @@ props:
       title: Attributes
       type: Drupal\Core\Template\Attribute
       default: {}
-    items: {}
+    variant:
+      title: Variant
+      type: string
+      enum:
+        - transparent
+        - grey
+        - primary
+        - secondary
+slots:
+  content:
+    title: Content

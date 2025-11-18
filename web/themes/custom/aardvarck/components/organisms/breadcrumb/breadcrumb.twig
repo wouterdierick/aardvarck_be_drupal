@@ -23,7 +23,7 @@
           {% endif %}
           {{ include('aardvarck:icon', { name: 'chevron-right', size: 'small' }, with_context = false) }}
         {% else %}
-          <span aria-current="page">
+          <span aria-current="page" class="current-page">
             {{ item.text }}
           </span>
         {% endif %}

@@ -22,29 +22,29 @@
   color: var(--colorLink);
   text-decoration: underline;
 }
-.button--link:hover {
+.button--link:hover, .button--link:focus {
   color: var(--colorLinkHover);
 }
 .button--grey {
   background-color: var(--colorNeutral300);
 }
-.button--grey:hover {
+.button--grey:hover, .button--grey:focus {
   color: var(--colorWhite);
   background-color: var(--colorLinkHover);
 }
 .button--primary {
   background-color: var(--colorPrimary);
 }
-.button--primary:hover {
+.button--primary:hover, .button--primary:focus {
   color: var(--colorWhite);
   background-color: var(--colorLinkHover);
 }
 .button--secondary {
   background-color: var(--colorSecondary);
 }
-.button--secondary:hover {
+.button--secondary:hover, .button--secondary:focus {
   color: var(--colorWhite);
   background-color: var(--colorLinkHover);
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22button.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAOA;EACE;EACA;EACA;;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAIA;EACE;EACA;EACA;;AACA;EACE;;AAIJ;EACE;;AACA;EACE;EACA;;AAIJ;EACE;;AACA;EACE;EACA;;AAIJ;EACE;;AACA;EACE;EACA%22,%22file%22:%22button.css%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22button.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAOA;EACE;EACA;EACA;;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAIA;EACE;EACA;EACA;;AACA;EAEE;;AAIJ;EACE;;AACA;EAEE;EACA;;AAIJ;EACE;;AACA;EAEE;EACA;;AAIJ;EACE;;AACA;EAEE;EACA%22,%22file%22:%22button.css%22%7D */

@@ -1,0 +1,17 @@
+// Molecule: Pill group
+// --------------------------------------------------
+
+@use "abstracts/mixins" as mixins;
+
+$base_class: "pill-group";
+
+.#{$base_class} {
+  &__title {
+    font-weight: var(--fontWeightMedium);
+  }
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: mixins.ptr(8);
+  }
+}

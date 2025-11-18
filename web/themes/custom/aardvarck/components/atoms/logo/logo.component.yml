@@ -16,13 +16,11 @@ props:
       title: Attributes
       type: Drupal\Core\Template\Attribute
       default: {}
-    title:
-      type: ['string', 'null']
-      title: Title
-      description: The title
-      default: null
     url:
       type: ['string', 'null']
       title: URL
       description: Optional url.
       default: null
+slots:
+  title:
+    title: Title

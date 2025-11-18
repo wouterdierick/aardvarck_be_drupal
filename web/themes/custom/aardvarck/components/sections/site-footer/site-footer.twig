@@ -9,10 +9,12 @@
 ] %}
 
 <footer {{ attributes.addClass(classes) }} role="contentinfo">
-  <div class="{{ base_class }}__wrapper">
-    {{ breadcrumb }}
+  <div class="{{ base_class }}__info-wrapper">
     {{ include('aardvarck:logo', { variant: 'horizontal', title: 'Aardvarck' }, with_context = false) }}
     {{ contact_info }}
-    {{ footer_navigation }}
   </div>
+  <div class="{{ base_class }}__navigation-wrapper">
+    {{ breadcrumb }}
+    {{ footer_navigation }}
+    </div>
 </footer>
