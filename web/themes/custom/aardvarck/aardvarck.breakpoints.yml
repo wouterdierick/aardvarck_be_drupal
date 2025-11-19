@@ -2,6 +2,6 @@ mobile:
   mediaQuery: '(min-width: 0px)'
   multipliers: [1x, 2x]
 tablet:
-  mediaQuery: '(min-width: 640px)'
+  mediaQuery: '(min-width: 480px)'
 desktop:
   mediaQuery: '(min-width: 1024px)'

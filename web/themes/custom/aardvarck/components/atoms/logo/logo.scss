@@ -6,12 +6,6 @@
 $base_class: "logo";
 
 .#{$base_class} {
-  a:focus img {
-    outline: 3px solid var(--focusColor);
-    outline-offset: 3px;
-    border-radius: 100%;
-  }
-
   img {
     display: block;
     width: 80px;

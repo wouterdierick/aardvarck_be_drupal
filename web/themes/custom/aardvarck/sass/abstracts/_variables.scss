@@ -75,3 +75,13 @@ $line-height-factor: 1.2;
   --fontLineHeightH6: #{mixins.ptr(16 * $line-height-factor)};
   --fontSizeSmall: #{mixins.ptr(14)};
 }
+
+// Animation
+// https: //curveeditor.com/
+
+:root {
+  --easeIn: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  --easeOut: cubic-bezier(0.215, 0.61, 0.355, 1);
+  --easeInOut: cubic-bezier(0.4, 0, 0.2, 1);
+  --easeOverShoot: cubic-bezier(0.23, 1.00, 0.48, 1.21);
+}

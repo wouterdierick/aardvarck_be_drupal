@@ -20,7 +20,7 @@
 .footer-navigation ul li.active > a:hover, .footer-navigation ul li.active > a:focus {
   color: var(--colorLinkHover);
 }
-@media (min-width: 431px) {
+@media (min-width: 480px) {
   .footer-navigation ul {
     flex-direction: row;
     gap: var(--gutterMedium);

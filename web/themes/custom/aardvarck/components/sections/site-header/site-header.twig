@@ -12,18 +12,28 @@
 <header {{ attributes.addClass(classes) }}>
   <div class="{{ base_class }}__wrapper">
     {{ include('aardvarck:logo', { variant: 'vertical', title: 'Aardvarck', url: logo_url }, with_context = false) }}
-    {{ main_navigation }}
-    {{ language_switcher }}
+
+    <button id="menu-toggle" class="{{ base_class }}__menu-toggle" aria-expanded="false" aria-controls="menu-wrapper" aria-label="{{ 'Open navigation'|t }}">
+      {{ include('aardvarck:icon', { name: 'menu', size: 'large' }, with_context = false) }}
+    </button>
   </div>
-  {% if variant == "home" %}
-  {% if content %}
-    <div class="{{ base_class }}__content">
-      {% block content %}
-      {% endblock %}
+
+  <div class="{{ base_class }}__navigation" id="menu-wrapper" aria-hidden="true">
+    <div class="{{ base_class }}__navigation-inner">
+      {{ main_navigation }}
+      {{ language_switcher }}
     </div>
-  {% endif %}
-  <div class="{{ base_class }}__arrow">
-    {{ include('aardvarck:icon', { name: 'arrow-down-circle', size: 'large' }, with_context = false) }}
   </div>
+
+  {% if variant == "home" %}
+    {% if content %}
+      <div class="{{ base_class }}__content">
+        {% block content %}
+        {% endblock %}
+      </div>
+    {% endif %}
+    <div class="{{ base_class }}__arrow">
+      {{ include('aardvarck:icon', { name: 'arrow-down-circle', size: 'large' }, with_context = false) }}
+    </div>
   {% endif %}
 </header>

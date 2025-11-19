@@ -1,1 +1,13 @@
-.logo a:focus img{outline:3px solid var(--focusColor);outline-offset:3px;border-radius:100%}.logo img{display:block;width:80px;height:auto}.logo--horizontal img{width:200px}.logo--vertical img{width:80px}/*# sourceMappingURL=logo.css.map */
+.logo img {
+  display: block;
+  width: 80px;
+  height: auto;
+}
+.logo--horizontal img {
+  width: 200px;
+}
+.logo--vertical img {
+  width: 80px;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22logo.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAQE;EACE;EACA;EACA;;AAGF;EACE;;AAEF;EACE%22,%22file%22:%22logo.css%22%7D */
