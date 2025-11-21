@@ -9,20 +9,25 @@
 #}
 <div class="site-wrapper">
 
+  {% if is_front %}
+    {% set header_content %}
+      <h1>Aardvarck – grafisch werk met een neus voor detail.</h1>
+      <div class="home-visual">
+        <img src="{{ base_path ~ directory ~ '/assets/home-visual.png' }}" alt="{{ 'Home visual' }}" />
+      </div>
+    {% endset %}
+  {% endif %}
+
   {% embed 'aardvarck:site-header' with {
     variant: is_front ? 'home' : default,
     logo_url: drupal_url('<front>'),
     main_navigation: page.header.aardvarck_mainnavigation,
     language_switcher: page.header.aardvarck_languageswitcher,
-    content: 'Hello'
+    content: header_content ? header_content : null
     } only %}
-    {% block content %}
-      <h1>Hello</h1>
-    {% endblock %}
   {% endembed %}
 
   {{ page.highlighted }}
-
 
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}

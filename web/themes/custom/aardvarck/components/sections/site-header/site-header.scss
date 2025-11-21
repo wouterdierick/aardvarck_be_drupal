@@ -4,6 +4,7 @@
 @use 'abstracts/mixins' as mixins;
 
 $base_class: "site-header";
+$nav_height: 200px; // hardcoded height for animation.
 
 .#{$base_class} {
   --colorHeaderBackground: var(--colorPrimary);
@@ -34,7 +35,7 @@ $base_class: "site-header";
     transform: translateX(-50%) translateY(50%);
     padding: mixins.ptr(8);
     background: var(--colorPageBackground);
-    border-radius: 100%;;
+    border-radius: 100%;
   }
 
   .logo {
@@ -96,7 +97,7 @@ $base_class: "site-header";
     transition: block-size 0.2s var(--easeInOut);
 
     &.open {
-      height: 100px;
+      height: $nav_height;
       opacity: 1;
       transition: block-size 0.5s var(--easeOverShoot);
     }
@@ -112,6 +113,19 @@ $base_class: "site-header";
     }
   }
 
+  .main-navigation {
+    margin-block: mixins.ptr(24);
+    ul {
+      flex-direction: column;
+      align-items: center;
+      gap: mixins.ptr(8);
+    }
+  }
+
+  .language-switcher {
+    justify-content: center;
+  }
+
 }
 
 // Home variant
@@ -120,10 +134,21 @@ $base_class: "site-header";
 
 
   .site-header__content {
-
+    position: relative;
+    z-index: 9;
     padding: var(--gutterMedium);
-    block-size: 50vh;
+    block-size: 600px;
     border-block-start: solid 3px var(--colorPageBackground);
+    // background-color: var(--colorSecondary);
+    background-color: #5dc9fa;
+
+    .home-visual {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      max-width: 1000px;
+      transform: translateY(16.5%)
+    }
 
     @include mixins.bp('desktop') {
       padding: var(--gutterLarge);

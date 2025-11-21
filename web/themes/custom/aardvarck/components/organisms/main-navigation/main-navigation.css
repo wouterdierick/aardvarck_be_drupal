@@ -6,6 +6,9 @@
   margin: 0;
   padding: 0;
 }
+.main-navigation ul li {
+  font-size: 1.25rem;
+}
 .main-navigation ul li > a {
   color: var(--colorMenu, --colorText);
 }
@@ -20,4 +23,4 @@
   color: var(--colorMenuActiveHover, var(--colorLinkHover));
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22main-navigation.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAQE;EACE;EACA;EACA;EAEA;EACA;EACA;;AAGE;EACE;;AACA;EAEE;;AAGJ;EACE;EACA;;AACA;EAEE%22,%22file%22:%22main-navigation.css%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22main-navigation.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAQE;EACE;EACA;EACA;EAEA;EACA;EACA;;AAEA;EACE;;AAEA;EACE;;AACA;EAEE;;AAGJ;EACE;EACA;;AACA;EAEE%22,%22file%22:%22main-navigation.css%22%7D */
