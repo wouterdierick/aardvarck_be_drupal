@@ -81,6 +81,8 @@ $nav_height: 200px; // hardcoded height for animation.
     appearance: none;
     border: 0;
     background: transparent;
+    margin: 0;
+    padding: 0;
     // align
     margin-inline-start: auto;
 
@@ -131,7 +133,6 @@ $nav_height: 200px; // hardcoded height for animation.
 // Home variant
 
 .#{$base_class}--home {
-
 
   .site-header__content {
     position: relative;

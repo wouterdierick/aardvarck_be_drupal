@@ -1,0 +1,62 @@
+// Component: Message
+// --------------------------------------------------
+
+@use "abstracts/mixins" as mixins;
+
+$base_class: "message";
+
+// Message wrapper from
+// /themes/custom/aardvarck/templates/system/status-messages.html.twig
+.messages {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gutterMedium);
+  .message:last-child {
+    margin-block-end: var(--gutterLarge);
+  }
+}
+
+.#{$base_class} {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: mixins.ptr(8);
+  padding-block: mixins.ptr(8);
+  padding-inline: var(--gutterMedium);
+  border-radius: var(--borderRadiusLayout);
+
+  p {
+    margin: 0;
+  }
+
+  button {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    margin-inline-start: auto;
+    &:hover {
+      svg,
+      svg * {
+        stroke: var(--colorLinkHover);
+      }
+    }
+  }
+}
+
+.#{$base_class}--status {
+  background-color: var(--colorStatus);
+}
+
+.#{$base_class}--warning {
+  background-color: var(--colorWarning);
+}
+
+.#{$base_class}--error {
+  background-color: var(--colorError);
+}
+
+.#{$base_class}--info {
+  background-color: var(--colorInfo);
+}

@@ -63,6 +63,8 @@
     appearance: none;
     border: 0;
     background: transparent;
+    margin: 0;
+    padding: 0;
     margin-inline-start: auto;
   }
   .site-header__menu-toggle:hover svg, .site-header__menu-toggle:hover svg * {
@@ -123,4 +125,4 @@
   }
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22site-header.scss%22,%22../../../sass/abstracts/_mixins.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAQA;EACE;;;AAGF;EACE;EACA;EACA;EACA;EACA;;AAGA;EACE;EACA;EACA;;ACwHA;ED3HF;IAMI;;;AAIJ;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;AAIA;EACE;EACA;EACA;EACA;EACA;EACA;;ACgGF;EDtGA;IASI;IACA;IACA;;;AC2FJ;EDtGA;IAeI;IACA;IACA;;;;AASN;EACE;;;ACgFA;ED1EF;IACE;;EAGF;IAEE;IACA;IACA;IAEA;;EAGE;IACE;;EAKN;IACE;IACA;IACA;;EAEA;IACE,QA7FO;IA8FP;IACA;;EAIJ;IACE;IACA;IACA;;;ACmCA;EDtCF;IAMI;;;ACqCF;EDjCF;IACE;;EACA;IACE;IACA;IACA;;EAIJ;IACE;;;AAUF;EACE;EACA;EACA;EACA;EACA;EAEA;;AAEA;EACE;EACA;EACA;EACA;EACA;;ACNF;EDRF;IAkBI%22,%22file%22:%22site-header.css%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22site-header.scss%22,%22../../../sass/abstracts/_mixins.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAQA;EACE;;;AAGF;EACE;EACA;EACA;EACA;EACA;;AAGA;EACE;EACA;EACA;;ACwHA;ED3HF;IAMI;;;AAIJ;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;AAIA;EACE;EACA;EACA;EACA;EACA;EACA;;ACgGF;EDtGA;IASI;IACA;IACA;;;AC2FJ;EDtGA;IAeI;IACA;IACA;;;;AASN;EACE;;;ACgFA;ED1EF;IACE;;EAGF;IAEE;IACA;IACA;IACA;IACA;IAEA;;EAGE;IACE;;EAKN;IACE;IACA;IACA;;EAEA;IACE,QA/FO;IAgGP;IACA;;EAIJ;IACE;IACA;IACA;;;ACiCA;EDpCF;IAMI;;;ACmCF;ED/BF;IACE;;EACA;IACE;IACA;IACA;;EAIJ;IACE;;;AASF;EACE;EACA;EACA;EACA;EACA;EAEA;;AAEA;EACE;EACA;EACA;EACA;EACA;;ACPF;EDPF;IAkBI%22,%22file%22:%22site-header.css%22%7D */

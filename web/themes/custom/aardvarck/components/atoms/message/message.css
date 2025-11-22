@@ -1,0 +1,51 @@
+.messages {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gutterMedium);
+}
+.messages .message:last-child {
+  margin-block-end: var(--gutterLarge);
+}
+
+.message {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  padding-block: 0.5rem;
+  padding-inline: var(--gutterMedium);
+  border-radius: var(--borderRadiusLayout);
+}
+.message p {
+  margin: 0;
+}
+.message button {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  margin-inline-start: auto;
+}
+.message button:hover svg,
+.message button:hover svg * {
+  stroke: var(--colorLinkHover);
+}
+
+.message--status {
+  background-color: var(--colorStatus);
+}
+
+.message--warning {
+  background-color: var(--colorWarning);
+}
+
+.message--error {
+  background-color: var(--colorError);
+}
+
+.message--info {
+  background-color: var(--colorInfo);
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22message.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AASA;EACE;EACA;EACA;;AACA;EACE;;;AAIJ;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;;AAEE;AAAA;EAEE;;;AAMR;EACE;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE%22,%22file%22:%22message.css%22%7D */

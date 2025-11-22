@@ -17,6 +17,12 @@
 
   --borderDefault: solid 1px var(--colorNeutral200);
 
+  // Messages
+  --colorError: #F8D7DA;
+  --colorWarning: #FFF3CD;
+  --colorStatus: #D4EDDA;
+  --colorInfo: #D1ECF1;
+
   // A11y
   --focusColor: var(--colorBlue500);
 }

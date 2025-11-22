@@ -1,0 +1,25 @@
+{#
+  Component: Message
+  -----------------------------------
+#}
+
+{% set base_class = 'message' %}
+{% set classes = [
+  base_class,
+  base_class ~ '--' ~ variant,
+] %}
+
+{# Add role="alert" only for error messages #}
+{% set attributes = variant == 'error'
+  ? attributes.setAttribute('role', 'alert')
+  : attributes
+%}
+
+<div {{ attributes.addClass(classes) }}>
+  {{ include('aardvarck:icon', { name: 'alert-triangle', size: 'normal' }, with_context = false) }}
+  <div class="{{ base_class ~ '__wrapper' }}">
+    <p class="visually-hidden">{{ heading }}</p>
+    <p>{{ message }}</p>
+  </div>
+  <button class="{{ base_class ~ '__close-button' }}">{{ include('aardvarck:icon', { name: 'x-square', size: 'large' }, with_context = false) }}</button>
+</div>
