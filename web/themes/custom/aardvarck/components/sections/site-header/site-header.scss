@@ -109,10 +109,6 @@ $nav_height: 200px; // hardcoded height for animation.
     block-size: 100%;
     padding: var(--gutterMedium);
     border-block-start: solid 3px var(--colorPageBackground);
-
-    @include mixins.bp('desktop') {
-      padding: var(--gutterLarge);
-    }
   }
 
   .main-navigation {
@@ -128,6 +124,68 @@ $nav_height: 200px; // hardcoded height for animation.
     justify-content: center;
   }
 
+}
+
+// Tablet layout
+
+@include mixins.bp('tablet', exact) {
+
+  .#{$base_class} {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .#{$base_class}__wrapper {
+  }
+
+  .#{$base_class}__navigation {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: var(--gutterMedium);
+  }
+
+  .#{$base_class}__navigation-inner {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .main-navigation {
+    margin-block-end: mixins.ptr(8);
+  }
+
+  .#{$base_class}__content {
+    flex: 0 0 100%;
+  }
+
+}
+
+// Desktop layout
+
+@include mixins.bp('desktop') {
+
+  .#{$base_class} {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .#{$base_class}__navigation {
+    flex: 1 0 auto;
+  }
+
+  .#{$base_class}__navigation-inner {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--gutterLarge);
+  }
+
+  .#{$base_class}__content {
+    flex: 0 0 100%;
+  }
 }
 
 // Home variant
